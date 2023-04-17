@@ -1,0 +1,18 @@
++--------------------------+--------------------------+----------------------------------------------------------------------------------------------------------+
+|       Launch Clock       |      Capture Clock       |                                                 Pin                                                      |
++--------------------------+--------------------------+----------------------------------------------------------------------------------------------------------+
+|              pll_adc_clk |              pll_adc_clk |                                                                           lock/pid_inst_1/i_mem_reg[39]/D|
+|              pll_adc_clk |              pll_adc_clk |                                                                           lock/pid_inst_1/i_mem_reg[43]/D|
+|              pll_adc_clk |              pll_adc_clk |                                                                           lock/pid_inst_1/i_mem_reg[45]/D|
+|              pll_adc_clk |              pll_adc_clk |                                                                           lock/pid_inst_1/i_mem_reg[41]/D|
+|              pll_adc_clk |              pll_adc_clk |                                                                           lock/pid_inst_1/i_mem_reg[50]/D|
+|              pll_adc_clk |              pll_adc_clk |                                                                           lock/pid_inst_1/i_mem_reg[49]/D|
+|               clk_fpga_3 |               clk_fpga_3 |                                                 ps/system_i/xadc/inst/INTR_CTRLR_GEN_I.ip2bus_wrack_reg/D|
+|               clk_fpga_3 |               clk_fpga_3 |ps/system_i/axi_protocol_converter_0/inst/gen_axilite.gen_b2s_conv.axilite_b2s/WR.aw_channel_0/cmd_translator_0/incr_cmd_0/axaddr_incr_reg[5]/D|
+|               clk_fpga_3 |               clk_fpga_3 |ps/system_i/axi_protocol_converter_0/inst/gen_axilite.gen_b2s_conv.axilite_b2s/WR.aw_channel_0/cmd_translator_0/incr_cmd_0/axaddr_incr_reg[9]/D|
+|              pll_adc_clk |              pll_adc_clk |                                                                            i_scope/i_wr1/dat_cnt_reg[1]/D|
+|              pll_adc_clk |              pll_adc_clk |                                                                         i_scope/i_wr1/axi_wlen_o_reg[1]/D|
+|               clk_fpga_3 |               clk_fpga_3 |ps/system_i/axi_protocol_converter_0/inst/gen_axilite.gen_b2s_conv.axilite_b2s/WR.aw_channel_0/cmd_translator_0/incr_cmd_0/axaddr_incr_reg[6]/D|
+|               clk_fpga_3 |               clk_fpga_3 |ps/system_i/axi_protocol_converter_0/inst/gen_axilite.gen_b2s_conv.axilite_b2s/WR.aw_channel_0/cmd_translator_0/incr_cmd_0/axaddr_incr_reg[10]/D|
+|               clk_fpga_3 |               clk_fpga_3 |ps/system_i/axi_protocol_converter_0/inst/gen_axilite.gen_b2s_conv.axilite_b2s/WR.aw_channel_0/cmd_translator_0/incr_cmd_0/axaddr_incr_reg[7]/D|
++--------------------------+--------------------------+----------------------------------------------------------------------------------------------------------+

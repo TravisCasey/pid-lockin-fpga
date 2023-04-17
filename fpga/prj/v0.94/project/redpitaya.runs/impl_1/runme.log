@@ -1,0 +1,1673 @@
+
+*** Running vivado
+    with args -log red_pitaya_top.vdi -applog -m64 -product Vivado -messageDb vivado.pb -mode batch -source red_pitaya_top.tcl -notrace
+
+
+
+****** Vivado v2020.1 (64-bit)
+  **** SW Build 2902540 on Wed May 27 19:54:49 MDT 2020
+  **** IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
+    ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+source red_pitaya_top.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2020.1/data/ip'.
+Command: link_design -top red_pitaya_top -part xc7z010clg400-1
+Design is defaulting to srcset: sources_1
+Design is defaulting to constrset: constrs_1
+INFO: [Device 21-403] Loading part xc7z010clg400-1
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/travi/Desktop/FPGA_Research/Code/RedPitaya-master/fpga/prj/v0.94/project/redpitaya.srcs/sources_1/bd/system/ip/system_axi_protocol_converter_0_0/system_axi_protocol_converter_0_0.dcp' for cell 'ps/system_i/axi_protocol_converter_0'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/travi/Desktop/FPGA_Research/Code/RedPitaya-master/fpga/prj/v0.94/project/redpitaya.srcs/sources_1/bd/system/ip/system_proc_sys_reset_0/system_proc_sys_reset_0.dcp' for cell 'ps/system_i/proc_sys_reset'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/travi/Desktop/FPGA_Research/Code/RedPitaya-master/fpga/prj/v0.94/project/redpitaya.srcs/sources_1/bd/system/ip/system_processing_system7_0/system_processing_system7_0.dcp' for cell 'ps/system_i/processing_system7'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/travi/Desktop/FPGA_Research/Code/RedPitaya-master/fpga/prj/v0.94/project/redpitaya.srcs/sources_1/bd/system/ip/system_xadc_0/system_xadc_0.dcp' for cell 'ps/system_i/xadc'
+Netlist sorting complete. Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.292 . Memory (MB): peak = 1025.406 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 1031 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2020.1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [c:/Users/travi/Desktop/FPGA_Research/Code/RedPitaya-master/fpga/prj/v0.94/project/redpitaya.srcs/sources_1/bd/system/ip/system_proc_sys_reset_0/system_proc_sys_reset_0_board.xdc] for cell 'ps/system_i/proc_sys_reset/U0'
+Finished Parsing XDC File [c:/Users/travi/Desktop/FPGA_Research/Code/RedPitaya-master/fpga/prj/v0.94/project/redpitaya.srcs/sources_1/bd/system/ip/system_proc_sys_reset_0/system_proc_sys_reset_0_board.xdc] for cell 'ps/system_i/proc_sys_reset/U0'
+Parsing XDC File [c:/Users/travi/Desktop/FPGA_Research/Code/RedPitaya-master/fpga/prj/v0.94/project/redpitaya.srcs/sources_1/bd/system/ip/system_proc_sys_reset_0/system_proc_sys_reset_0.xdc] for cell 'ps/system_i/proc_sys_reset/U0'
+Finished Parsing XDC File [c:/Users/travi/Desktop/FPGA_Research/Code/RedPitaya-master/fpga/prj/v0.94/project/redpitaya.srcs/sources_1/bd/system/ip/system_proc_sys_reset_0/system_proc_sys_reset_0.xdc] for cell 'ps/system_i/proc_sys_reset/U0'
+Parsing XDC File [c:/Users/travi/Desktop/FPGA_Research/Code/RedPitaya-master/fpga/prj/v0.94/project/redpitaya.srcs/sources_1/bd/system/ip/system_processing_system7_0/system_processing_system7_0.xdc] for cell 'ps/system_i/processing_system7/inst'
+Finished Parsing XDC File [c:/Users/travi/Desktop/FPGA_Research/Code/RedPitaya-master/fpga/prj/v0.94/project/redpitaya.srcs/sources_1/bd/system/ip/system_processing_system7_0/system_processing_system7_0.xdc] for cell 'ps/system_i/processing_system7/inst'
+Parsing XDC File [c:/Users/travi/Desktop/FPGA_Research/Code/RedPitaya-master/fpga/prj/v0.94/project/redpitaya.srcs/sources_1/bd/system/ip/system_xadc_0/system_xadc_0.xdc] for cell 'ps/system_i/xadc/inst'
+Finished Parsing XDC File [c:/Users/travi/Desktop/FPGA_Research/Code/RedPitaya-master/fpga/prj/v0.94/project/redpitaya.srcs/sources_1/bd/system/ip/system_xadc_0/system_xadc_0.xdc] for cell 'ps/system_i/xadc/inst'
+Parsing XDC File [C:/Users/travi/Desktop/FPGA_Research/Code/RedPitaya-master/fpga/prj/v0.94/project/redpitaya.srcs/constrs_1/imports/fpga/sdc/red_pitaya.xdc]
+INFO: [Timing 38-35] Done setting XDC timing constraints. [C:/Users/travi/Desktop/FPGA_Research/Code/RedPitaya-master/fpga/prj/v0.94/project/redpitaya.srcs/constrs_1/imports/fpga/sdc/red_pitaya.xdc:206]
+INFO: [Timing 38-2] Deriving generated clocks [C:/Users/travi/Desktop/FPGA_Research/Code/RedPitaya-master/fpga/prj/v0.94/project/redpitaya.srcs/constrs_1/imports/fpga/sdc/red_pitaya.xdc:206]
+WARNING: [Vivado 12-627] No clocks matched 'dac_clk_o'. [C:/Users/travi/Desktop/FPGA_Research/Code/RedPitaya-master/fpga/prj/v0.94/project/redpitaya.srcs/constrs_1/imports/fpga/sdc/red_pitaya.xdc:206]
+INFO: [Vivado 12-626] No clocks found. Please use 'create_clock' or 'create_generated_clock' command to create clocks. [C:/Users/travi/Desktop/FPGA_Research/Code/RedPitaya-master/fpga/prj/v0.94/project/redpitaya.srcs/constrs_1/imports/fpga/sdc/red_pitaya.xdc:206]
+get_clocks: Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 1337.660 ; gain = 312.254
+CRITICAL WARNING: [Vivado 12-4739] set_false_path:No valid object(s) found for '-to [get_clocks dac_clk_o]'. [C:/Users/travi/Desktop/FPGA_Research/Code/RedPitaya-master/fpga/prj/v0.94/project/redpitaya.srcs/constrs_1/imports/fpga/sdc/red_pitaya.xdc:206]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-627] No clocks matched 'dac_clk_2x'. [C:/Users/travi/Desktop/FPGA_Research/Code/RedPitaya-master/fpga/prj/v0.94/project/redpitaya.srcs/constrs_1/imports/fpga/sdc/red_pitaya.xdc:207]
+INFO: [Vivado 12-626] No clocks found. Please use 'create_clock' or 'create_generated_clock' command to create clocks. [C:/Users/travi/Desktop/FPGA_Research/Code/RedPitaya-master/fpga/prj/v0.94/project/redpitaya.srcs/constrs_1/imports/fpga/sdc/red_pitaya.xdc:207]
+CRITICAL WARNING: [Vivado 12-4739] set_false_path:No valid object(s) found for '-to [get_clocks dac_clk_2x]'. [C:/Users/travi/Desktop/FPGA_Research/Code/RedPitaya-master/fpga/prj/v0.94/project/redpitaya.srcs/constrs_1/imports/fpga/sdc/red_pitaya.xdc:207]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-627] No clocks matched 'dac_clk_2p'. [C:/Users/travi/Desktop/FPGA_Research/Code/RedPitaya-master/fpga/prj/v0.94/project/redpitaya.srcs/constrs_1/imports/fpga/sdc/red_pitaya.xdc:208]
+INFO: [Vivado 12-626] No clocks found. Please use 'create_clock' or 'create_generated_clock' command to create clocks. [C:/Users/travi/Desktop/FPGA_Research/Code/RedPitaya-master/fpga/prj/v0.94/project/redpitaya.srcs/constrs_1/imports/fpga/sdc/red_pitaya.xdc:208]
+CRITICAL WARNING: [Vivado 12-4739] set_false_path:No valid object(s) found for '-to [get_clocks dac_clk_2p]'. [C:/Users/travi/Desktop/FPGA_Research/Code/RedPitaya-master/fpga/prj/v0.94/project/redpitaya.srcs/constrs_1/imports/fpga/sdc/red_pitaya.xdc:208]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-627] No clocks matched 'dac_clk_1x'. [C:/Users/travi/Desktop/FPGA_Research/Code/RedPitaya-master/fpga/prj/v0.94/project/redpitaya.srcs/constrs_1/imports/fpga/sdc/red_pitaya.xdc:210]
+INFO: [Vivado 12-626] No clocks found. Please use 'create_clock' or 'create_generated_clock' command to create clocks. [C:/Users/travi/Desktop/FPGA_Research/Code/RedPitaya-master/fpga/prj/v0.94/project/redpitaya.srcs/constrs_1/imports/fpga/sdc/red_pitaya.xdc:210]
+CRITICAL WARNING: [Vivado 12-4739] set_false_path:No valid object(s) found for '-to [get_clocks dac_clk_1x]'. [C:/Users/travi/Desktop/FPGA_Research/Code/RedPitaya-master/fpga/prj/v0.94/project/redpitaya.srcs/constrs_1/imports/fpga/sdc/red_pitaya.xdc:210]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-627] No clocks matched 'dac_clk_2x'. [C:/Users/travi/Desktop/FPGA_Research/Code/RedPitaya-master/fpga/prj/v0.94/project/redpitaya.srcs/constrs_1/imports/fpga/sdc/red_pitaya.xdc:211]
+INFO: [Vivado 12-626] No clocks found. Please use 'create_clock' or 'create_generated_clock' command to create clocks. [C:/Users/travi/Desktop/FPGA_Research/Code/RedPitaya-master/fpga/prj/v0.94/project/redpitaya.srcs/constrs_1/imports/fpga/sdc/red_pitaya.xdc:211]
+CRITICAL WARNING: [Vivado 12-4739] set_false_path:No valid object(s) found for '-to [get_clocks dac_clk_2x]'. [C:/Users/travi/Desktop/FPGA_Research/Code/RedPitaya-master/fpga/prj/v0.94/project/redpitaya.srcs/constrs_1/imports/fpga/sdc/red_pitaya.xdc:211]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-627] No clocks matched 'dac_clk_2p'. [C:/Users/travi/Desktop/FPGA_Research/Code/RedPitaya-master/fpga/prj/v0.94/project/redpitaya.srcs/constrs_1/imports/fpga/sdc/red_pitaya.xdc:212]
+INFO: [Vivado 12-626] No clocks found. Please use 'create_clock' or 'create_generated_clock' command to create clocks. [C:/Users/travi/Desktop/FPGA_Research/Code/RedPitaya-master/fpga/prj/v0.94/project/redpitaya.srcs/constrs_1/imports/fpga/sdc/red_pitaya.xdc:212]
+CRITICAL WARNING: [Vivado 12-4739] set_false_path:No valid object(s) found for '-to [get_clocks dac_clk_2p]'. [C:/Users/travi/Desktop/FPGA_Research/Code/RedPitaya-master/fpga/prj/v0.94/project/redpitaya.srcs/constrs_1/imports/fpga/sdc/red_pitaya.xdc:212]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-627] No clocks matched 'ser_clk'. [C:/Users/travi/Desktop/FPGA_Research/Code/RedPitaya-master/fpga/prj/v0.94/project/redpitaya.srcs/constrs_1/imports/fpga/sdc/red_pitaya.xdc:213]
+INFO: [Vivado 12-626] No clocks found. Please use 'create_clock' or 'create_generated_clock' command to create clocks. [C:/Users/travi/Desktop/FPGA_Research/Code/RedPitaya-master/fpga/prj/v0.94/project/redpitaya.srcs/constrs_1/imports/fpga/sdc/red_pitaya.xdc:213]
+CRITICAL WARNING: [Vivado 12-4739] set_false_path:No valid object(s) found for '-to [get_clocks ser_clk]'. [C:/Users/travi/Desktop/FPGA_Research/Code/RedPitaya-master/fpga/prj/v0.94/project/redpitaya.srcs/constrs_1/imports/fpga/sdc/red_pitaya.xdc:213]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-627] No clocks matched 'pdm_clk'. [C:/Users/travi/Desktop/FPGA_Research/Code/RedPitaya-master/fpga/prj/v0.94/project/redpitaya.srcs/constrs_1/imports/fpga/sdc/red_pitaya.xdc:214]
+INFO: [Vivado 12-626] No clocks found. Please use 'create_clock' or 'create_generated_clock' command to create clocks. [C:/Users/travi/Desktop/FPGA_Research/Code/RedPitaya-master/fpga/prj/v0.94/project/redpitaya.srcs/constrs_1/imports/fpga/sdc/red_pitaya.xdc:214]
+CRITICAL WARNING: [Vivado 12-4739] set_false_path:No valid object(s) found for '-to [get_clocks pdm_clk]'. [C:/Users/travi/Desktop/FPGA_Research/Code/RedPitaya-master/fpga/prj/v0.94/project/redpitaya.srcs/constrs_1/imports/fpga/sdc/red_pitaya.xdc:214]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-627] No clocks matched 'dac_clk_o'. [C:/Users/travi/Desktop/FPGA_Research/Code/RedPitaya-master/fpga/prj/v0.94/project/redpitaya.srcs/constrs_1/imports/fpga/sdc/red_pitaya.xdc:215]
+INFO: [Vivado 12-626] No clocks found. Please use 'create_clock' or 'create_generated_clock' command to create clocks. [C:/Users/travi/Desktop/FPGA_Research/Code/RedPitaya-master/fpga/prj/v0.94/project/redpitaya.srcs/constrs_1/imports/fpga/sdc/red_pitaya.xdc:215]
+WARNING: [Vivado 12-627] No clocks matched 'dac_clk_2x'. [C:/Users/travi/Desktop/FPGA_Research/Code/RedPitaya-master/fpga/prj/v0.94/project/redpitaya.srcs/constrs_1/imports/fpga/sdc/red_pitaya.xdc:215]
+INFO: [Vivado 12-626] No clocks found. Please use 'create_clock' or 'create_generated_clock' command to create clocks. [C:/Users/travi/Desktop/FPGA_Research/Code/RedPitaya-master/fpga/prj/v0.94/project/redpitaya.srcs/constrs_1/imports/fpga/sdc/red_pitaya.xdc:215]
+CRITICAL WARNING: [Vivado 12-4739] set_false_path:No valid object(s) found for '-from [get_clocks dac_clk_o]'. [C:/Users/travi/Desktop/FPGA_Research/Code/RedPitaya-master/fpga/prj/v0.94/project/redpitaya.srcs/constrs_1/imports/fpga/sdc/red_pitaya.xdc:215]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-627] No clocks matched 'dac_clk_o'. [C:/Users/travi/Desktop/FPGA_Research/Code/RedPitaya-master/fpga/prj/v0.94/project/redpitaya.srcs/constrs_1/imports/fpga/sdc/red_pitaya.xdc:216]
+INFO: [Vivado 12-626] No clocks found. Please use 'create_clock' or 'create_generated_clock' command to create clocks. [C:/Users/travi/Desktop/FPGA_Research/Code/RedPitaya-master/fpga/prj/v0.94/project/redpitaya.srcs/constrs_1/imports/fpga/sdc/red_pitaya.xdc:216]
+WARNING: [Vivado 12-627] No clocks matched 'dac_clk_2p'. [C:/Users/travi/Desktop/FPGA_Research/Code/RedPitaya-master/fpga/prj/v0.94/project/redpitaya.srcs/constrs_1/imports/fpga/sdc/red_pitaya.xdc:216]
+INFO: [Vivado 12-626] No clocks found. Please use 'create_clock' or 'create_generated_clock' command to create clocks. [C:/Users/travi/Desktop/FPGA_Research/Code/RedPitaya-master/fpga/prj/v0.94/project/redpitaya.srcs/constrs_1/imports/fpga/sdc/red_pitaya.xdc:216]
+CRITICAL WARNING: [Vivado 12-4739] set_false_path:No valid object(s) found for '-from [get_clocks dac_clk_o]'. [C:/Users/travi/Desktop/FPGA_Research/Code/RedPitaya-master/fpga/prj/v0.94/project/redpitaya.srcs/constrs_1/imports/fpga/sdc/red_pitaya.xdc:216]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+Finished Parsing XDC File [C:/Users/travi/Desktop/FPGA_Research/Code/RedPitaya-master/fpga/prj/v0.94/project/redpitaya.srcs/constrs_1/imports/fpga/sdc/red_pitaya.xdc]
+Parsing XDC File [C:/Users/travi/Desktop/FPGA_Research/Code/RedPitaya-master/fpga/prj/v0.94/project/redpitaya.srcs/constrs_1/imports/fpga/prj/v0.94/sdc/red_pitaya.xdc]
+WARNING: [Vivado 12-180] No cells matched 'i_ams/XADC_inst'. [C:/Users/travi/Desktop/FPGA_Research/Code/RedPitaya-master/fpga/prj/v0.94/project/redpitaya.srcs/constrs_1/imports/fpga/prj/v0.94/sdc/red_pitaya.xdc:1]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/travi/Desktop/FPGA_Research/Code/RedPitaya-master/fpga/prj/v0.94/project/redpitaya.srcs/constrs_1/imports/fpga/prj/v0.94/sdc/red_pitaya.xdc:1]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-627] No clocks matched 'dac_clk_out'. [C:/Users/travi/Desktop/FPGA_Research/Code/RedPitaya-master/fpga/prj/v0.94/project/redpitaya.srcs/constrs_1/imports/fpga/prj/v0.94/sdc/red_pitaya.xdc:7]
+INFO: [Vivado 12-626] No clocks found. Please use 'create_clock' or 'create_generated_clock' command to create clocks. [C:/Users/travi/Desktop/FPGA_Research/Code/RedPitaya-master/fpga/prj/v0.94/project/redpitaya.srcs/constrs_1/imports/fpga/prj/v0.94/sdc/red_pitaya.xdc:7]
+CRITICAL WARNING: [Vivado 12-4739] set_false_path:No valid object(s) found for '-to [get_clocks dac_clk_out]'. [C:/Users/travi/Desktop/FPGA_Research/Code/RedPitaya-master/fpga/prj/v0.94/project/redpitaya.srcs/constrs_1/imports/fpga/prj/v0.94/sdc/red_pitaya.xdc:7]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-627] No clocks matched 'ser_clk_out'. [C:/Users/travi/Desktop/FPGA_Research/Code/RedPitaya-master/fpga/prj/v0.94/project/redpitaya.srcs/constrs_1/imports/fpga/prj/v0.94/sdc/red_pitaya.xdc:8]
+INFO: [Vivado 12-626] No clocks found. Please use 'create_clock' or 'create_generated_clock' command to create clocks. [C:/Users/travi/Desktop/FPGA_Research/Code/RedPitaya-master/fpga/prj/v0.94/project/redpitaya.srcs/constrs_1/imports/fpga/prj/v0.94/sdc/red_pitaya.xdc:8]
+CRITICAL WARNING: [Vivado 12-4739] set_false_path:No valid object(s) found for '-to [get_clocks ser_clk_out]'. [C:/Users/travi/Desktop/FPGA_Research/Code/RedPitaya-master/fpga/prj/v0.94/project/redpitaya.srcs/constrs_1/imports/fpga/prj/v0.94/sdc/red_pitaya.xdc:8]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-627] No clocks matched 'dac_2clk_out'. [C:/Users/travi/Desktop/FPGA_Research/Code/RedPitaya-master/fpga/prj/v0.94/project/redpitaya.srcs/constrs_1/imports/fpga/prj/v0.94/sdc/red_pitaya.xdc:9]
+INFO: [Vivado 12-626] No clocks found. Please use 'create_clock' or 'create_generated_clock' command to create clocks. [C:/Users/travi/Desktop/FPGA_Research/Code/RedPitaya-master/fpga/prj/v0.94/project/redpitaya.srcs/constrs_1/imports/fpga/prj/v0.94/sdc/red_pitaya.xdc:9]
+CRITICAL WARNING: [Vivado 12-4739] set_false_path:No valid object(s) found for '-to [get_clocks dac_2clk_out]'. [C:/Users/travi/Desktop/FPGA_Research/Code/RedPitaya-master/fpga/prj/v0.94/project/redpitaya.srcs/constrs_1/imports/fpga/prj/v0.94/sdc/red_pitaya.xdc:9]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-627] No clocks matched 'dac_clk_out'. [C:/Users/travi/Desktop/FPGA_Research/Code/RedPitaya-master/fpga/prj/v0.94/project/redpitaya.srcs/constrs_1/imports/fpga/prj/v0.94/sdc/red_pitaya.xdc:12]
+INFO: [Vivado 12-626] No clocks found. Please use 'create_clock' or 'create_generated_clock' command to create clocks. [C:/Users/travi/Desktop/FPGA_Research/Code/RedPitaya-master/fpga/prj/v0.94/project/redpitaya.srcs/constrs_1/imports/fpga/prj/v0.94/sdc/red_pitaya.xdc:12]
+WARNING: [Vivado 12-627] No clocks matched 'dac_2clk_out'. [C:/Users/travi/Desktop/FPGA_Research/Code/RedPitaya-master/fpga/prj/v0.94/project/redpitaya.srcs/constrs_1/imports/fpga/prj/v0.94/sdc/red_pitaya.xdc:12]
+INFO: [Vivado 12-626] No clocks found. Please use 'create_clock' or 'create_generated_clock' command to create clocks. [C:/Users/travi/Desktop/FPGA_Research/Code/RedPitaya-master/fpga/prj/v0.94/project/redpitaya.srcs/constrs_1/imports/fpga/prj/v0.94/sdc/red_pitaya.xdc:12]
+CRITICAL WARNING: [Vivado 12-4739] set_false_path:No valid object(s) found for '-from [get_clocks dac_clk_out]'. [C:/Users/travi/Desktop/FPGA_Research/Code/RedPitaya-master/fpga/prj/v0.94/project/redpitaya.srcs/constrs_1/imports/fpga/prj/v0.94/sdc/red_pitaya.xdc:12]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-627] No clocks matched 'dac_clk_out'. [C:/Users/travi/Desktop/FPGA_Research/Code/RedPitaya-master/fpga/prj/v0.94/project/redpitaya.srcs/constrs_1/imports/fpga/prj/v0.94/sdc/red_pitaya.xdc:13]
+INFO: [Vivado 12-626] No clocks found. Please use 'create_clock' or 'create_generated_clock' command to create clocks. [C:/Users/travi/Desktop/FPGA_Research/Code/RedPitaya-master/fpga/prj/v0.94/project/redpitaya.srcs/constrs_1/imports/fpga/prj/v0.94/sdc/red_pitaya.xdc:13]
+WARNING: [Vivado 12-627] No clocks matched 'dac_2ph_out'. [C:/Users/travi/Desktop/FPGA_Research/Code/RedPitaya-master/fpga/prj/v0.94/project/redpitaya.srcs/constrs_1/imports/fpga/prj/v0.94/sdc/red_pitaya.xdc:13]
+INFO: [Vivado 12-626] No clocks found. Please use 'create_clock' or 'create_generated_clock' command to create clocks. [C:/Users/travi/Desktop/FPGA_Research/Code/RedPitaya-master/fpga/prj/v0.94/project/redpitaya.srcs/constrs_1/imports/fpga/prj/v0.94/sdc/red_pitaya.xdc:13]
+CRITICAL WARNING: [Vivado 12-4739] set_false_path:No valid object(s) found for '-from [get_clocks dac_clk_out]'. [C:/Users/travi/Desktop/FPGA_Research/Code/RedPitaya-master/fpga/prj/v0.94/project/redpitaya.srcs/constrs_1/imports/fpga/prj/v0.94/sdc/red_pitaya.xdc:13]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+Finished Parsing XDC File [C:/Users/travi/Desktop/FPGA_Research/Code/RedPitaya-master/fpga/prj/v0.94/project/redpitaya.srcs/constrs_1/imports/fpga/prj/v0.94/sdc/red_pitaya.xdc]
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.005 . Memory (MB): peak = 1337.660 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 56 instances were transformed.
+  IOBUF => IOBUF (IBUF, OBUFT): 16 instances
+  OBUFDS => OBUFDS_DUAL_BUF (INV, OBUFDS(x2)): 2 instances
+  RAM32M => RAM32M (RAMD32(x6), RAMS32(x2)): 38 instances
+
+35 Infos, 20 Warnings, 16 Critical Warnings and 0 Errors encountered.
+link_design completed successfully
+link_design: Time (s): cpu = 00:00:22 ; elapsed = 00:00:25 . Memory (MB): peak = 1337.660 ; gain = 312.254
+Command: opt_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7z010'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z010'
+Running DRC as a precondition to command opt_design
+
+Starting DRC Task
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Project 1-461] DRC finished with 0 Errors
+INFO: [Project 1-462] Please refer to the DRC report (report_drc) for more information.
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 1337.660 ; gain = 0.000
+
+Starting Cache Timing Information Task
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Ending Cache Timing Information Task | Checksum: 1294d0b3d
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.810 . Memory (MB): peak = 1357.629 ; gain = 19.969
+
+Starting Logic Optimization Task
+
+Phase 1 Retarget
+INFO: [Opt 31-138] Pushed 1 inverter(s) to 1 load pin(s).
+INFO: [Opt 31-49] Retargeted 0 cell(s).
+Phase 1 Retarget | Checksum: 1744f4e40
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.922 . Memory (MB): peak = 1553.867 ; gain = 0.000
+INFO: [Opt 31-389] Phase Retarget created 5 cells and removed 39 cells
+INFO: [Opt 31-1021] In phase Retarget, 2 netlist objects are constrained preventing optimization. Please run opt_design with -debug_log to get more detail. 
+
+Phase 2 Constant propagation
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Phase 2 Constant propagation | Checksum: 15887b632
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:01 . Memory (MB): peak = 1553.867 ; gain = 0.000
+INFO: [Opt 31-389] Phase Constant propagation created 0 cells and removed 56 cells
+
+Phase 3 Sweep
+Phase 3 Sweep | Checksum: 19e0c367c
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 1553.867 ; gain = 0.000
+INFO: [Opt 31-389] Phase Sweep created 0 cells and removed 204 cells
+
+Phase 4 BUFG optimization
+Phase 4 BUFG optimization | Checksum: 19e0c367c
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 1553.867 ; gain = 0.000
+INFO: [Opt 31-662] Phase BUFG optimization created 0 cells of which 0 are BUFGs and removed 0 cells.
+
+Phase 5 Shift Register Optimization
+INFO: [Opt 31-1064] SRL Remap converted 0 SRLs to 0 registers and converted 0 registers of register chains to 0 SRLs
+Phase 5 Shift Register Optimization | Checksum: 19e0c367c
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 1553.867 ; gain = 0.000
+INFO: [Opt 31-389] Phase Shift Register Optimization created 0 cells and removed 0 cells
+
+Phase 6 Post Processing Netlist
+Phase 6 Post Processing Netlist | Checksum: 19e0c367c
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 1553.867 ; gain = 0.000
+INFO: [Opt 31-389] Phase Post Processing Netlist created 0 cells and removed 0 cells
+Opt_design Change Summary
+=========================
+
+
+-------------------------------------------------------------------------------------------------------------------------
+|  Phase                        |  #Cells created  |  #Cells Removed  |  #Constrained objects preventing optimizations  |
+-------------------------------------------------------------------------------------------------------------------------
+|  Retarget                     |               5  |              39  |                                              2  |
+|  Constant propagation         |               0  |              56  |                                              0  |
+|  Sweep                        |               0  |             204  |                                              0  |
+|  BUFG optimization            |               0  |               0  |                                              0  |
+|  Shift Register Optimization  |               0  |               0  |                                              0  |
+|  Post Processing Netlist      |               0  |               0  |                                              0  |
+-------------------------------------------------------------------------------------------------------------------------
+
+
+
+Starting Connectivity Check Task
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.035 . Memory (MB): peak = 1553.867 ; gain = 0.000
+Ending Logic Optimization Task | Checksum: 17eb4781f
+
+Time (s): cpu = 00:00:04 ; elapsed = 00:00:03 . Memory (MB): peak = 1553.867 ; gain = 0.000
+
+Starting Power Optimization Task
+INFO: [Pwropt 34-132] Skipping clock gating for clocks with a period < 2.00 ns.
+INFO: [Power 33-23] Power model is not available for i_DNA
+INFO: [Pwropt 34-9] Applying IDT optimizations ...
+INFO: [Pwropt 34-10] Applying ODC optimizations ...
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Running Vector-less Activity Propagation...
+
+Finished Running Vector-less Activity Propagation
+
+
+Starting PowerOpt Patch Enables Task
+INFO: [Pwropt 34-162] WRITE_MODE attribute of 0 BRAM(s) out of a total of 18 has been updated to save power. Run report_power_opt to get a complete listing of the BRAMs updated.
+INFO: [Pwropt 34-201] Structural ODC has moved 0 WE to EN ports
+Number of BRAM Ports augmented: 14 newly gated: 0 Total Ports: 36
+Ending PowerOpt Patch Enables Task | Checksum: 18678ac6b
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.134 . Memory (MB): peak = 1715.430 ; gain = 0.000
+Ending Power Optimization Task | Checksum: 18678ac6b
+
+Time (s): cpu = 00:00:07 ; elapsed = 00:00:04 . Memory (MB): peak = 1715.430 ; gain = 161.562
+
+Starting Final Cleanup Task
+Ending Final Cleanup Task | Checksum: 18678ac6b
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1715.430 ; gain = 0.000
+
+Starting Netlist Obfuscation Task
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.024 . Memory (MB): peak = 1715.430 ; gain = 0.000
+Ending Netlist Obfuscation Task | Checksum: 129fef370
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.024 . Memory (MB): peak = 1715.430 ; gain = 0.000
+INFO: [Common 17-83] Releasing license: Implementation
+59 Infos, 20 Warnings, 16 Critical Warnings and 0 Errors encountered.
+opt_design completed successfully
+opt_design: Time (s): cpu = 00:00:17 ; elapsed = 00:00:12 . Memory (MB): peak = 1715.430 ; gain = 377.770
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.106 . Memory (MB): peak = 1715.430 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/Users/travi/Desktop/FPGA_Research/Code/RedPitaya-master/fpga/prj/v0.94/project/redpitaya.runs/impl_1/red_pitaya_top_opt.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_drc -file red_pitaya_top_drc_opted.rpt -pb red_pitaya_top_drc_opted.pb -rpx red_pitaya_top_drc_opted.rpx
+Command: report_drc -file red_pitaya_top_drc_opted.rpt -pb red_pitaya_top_drc_opted.pb -rpx red_pitaya_top_drc_opted.rpx
+INFO: [IP_Flow 19-1839] IP Catalog is up to date.
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Coretcl 2-168] The results of DRC are in file C:/Users/travi/Desktop/FPGA_Research/Code/RedPitaya-master/fpga/prj/v0.94/project/redpitaya.runs/impl_1/red_pitaya_top_drc_opted.rpt.
+report_drc completed successfully
+Command: place_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7z010'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z010'
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+Running DRC as a precondition to command place_design
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+
+Starting Placer Task
+INFO: [Place 30-611] Multithreading enabled for place_design using a maximum of 2 CPUs
+
+Phase 1 Placer Initialization
+
+Phase 1.1 Placer Initialization Netlist Sorting
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.005 . Memory (MB): peak = 1715.430 ; gain = 0.000
+Phase 1.1 Placer Initialization Netlist Sorting | Checksum: aacfcf74
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.027 . Memory (MB): peak = 1715.430 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 1715.430 ; gain = 0.000
+
+Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device | Checksum: ba46f69f
+
+Time (s): cpu = 00:00:04 ; elapsed = 00:00:03 . Memory (MB): peak = 1715.430 ; gain = 0.000
+
+Phase 1.3 Build Placer Netlist Model
+Phase 1.3 Build Placer Netlist Model | Checksum: 90c82c32
+
+Time (s): cpu = 00:00:09 ; elapsed = 00:00:06 . Memory (MB): peak = 1715.430 ; gain = 0.000
+
+Phase 1.4 Constrain Clocks/Macros
+Phase 1.4 Constrain Clocks/Macros | Checksum: 90c82c32
+
+Time (s): cpu = 00:00:09 ; elapsed = 00:00:06 . Memory (MB): peak = 1715.430 ; gain = 0.000
+Phase 1 Placer Initialization | Checksum: 90c82c32
+
+Time (s): cpu = 00:00:09 ; elapsed = 00:00:06 . Memory (MB): peak = 1715.430 ; gain = 0.000
+
+Phase 2 Global Placement
+
+Phase 2.1 Floorplanning
+Phase 2.1 Floorplanning | Checksum: 143831e1b
+
+Time (s): cpu = 00:00:10 ; elapsed = 00:00:07 . Memory (MB): peak = 1715.430 ; gain = 0.000
+
+Phase 2.2 Global Placement Core
+
+Phase 2.2.1 Physical Synthesis In Placer
+INFO: [Physopt 32-1035] Found 159 LUTNM shape to break, 181 LUT instances to create LUTNM shape
+INFO: [Physopt 32-1044] Break lutnm for timing: one critical 28, two critical 131, total 159, new lutff created 2
+INFO: [Physopt 32-775] End 1 Pass. Optimized 237 nets or cells. Created 159 new cells, deleted 78 existing cells and moved 0 existing cell
+INFO: [Physopt 32-65] No nets found for high-fanout optimization.
+INFO: [Physopt 32-232] Optimized 0 net. Created 0 new instance.
+INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+INFO: [Physopt 32-117] Net lock/calib_out_2/pid_error[0] could not be optimized because driver lock/calib_out_2/d_mem_2_reg_i_10 could not be replicated
+INFO: [Physopt 32-117] Net lock/pid_inst_1/B[2] could not be optimized because driver lock/pid_inst_1/d_mem_2_reg_i_11 could not be replicated
+INFO: [Physopt 32-117] Net lock/calib_out_2/pid_error[4] could not be optimized because driver lock/calib_out_2/d_mem_2_reg_i_6 could not be replicated
+INFO: [Physopt 32-117] Net lock/calib_out_2/pid_error[1] could not be optimized because driver lock/calib_out_2/d_mem_2_reg_i_9 could not be replicated
+INFO: [Physopt 32-117] Net lock/calib_out_2/pid_error[3] could not be optimized because driver lock/calib_out_2/d_mem_2_reg_i_7 could not be replicated
+INFO: [Physopt 32-117] Net lock/calib_out_2/pid_error[2] could not be optimized because driver lock/calib_out_2/d_mem_2_reg_i_8 could not be replicated
+INFO: [Physopt 32-117] Net lock/calib_out_2/pid_error[7] could not be optimized because driver lock/calib_out_2/d_mem_2_reg_i_3 could not be replicated
+INFO: [Physopt 32-117] Net lock/calib_out_2/pid_error[5] could not be optimized because driver lock/calib_out_2/d_mem_2_reg_i_5 could not be replicated
+INFO: [Physopt 32-117] Net lock/calib_out_2/pid_error[6] could not be optimized because driver lock/calib_out_2/d_mem_2_reg_i_4 could not be replicated
+INFO: [Physopt 32-117] Net lock/pid_inst_1/pid_error[2] could not be optimized because driver lock/pid_inst_1/d_mem_2_reg_i_13 could not be replicated
+INFO: [Physopt 32-117] Net lock/pid_inst_1/B[0] could not be optimized because driver lock/pid_inst_1/d_mem_2_reg_i_15 could not be replicated
+INFO: [Physopt 32-117] Net lock/pid_inst_1/B[1] could not be optimized because driver lock/pid_inst_1/d_mem_2_reg_i_14 could not be replicated
+INFO: [Physopt 32-117] Net lock/pid_inst_1/pid_error[3] could not be optimized because driver lock/pid_inst_1/d_mem_2_reg_i_12 could not be replicated
+INFO: [Physopt 32-117] Net lock/pid_inst_1/pid_error[13] could not be optimized because driver lock/pid_inst_1/d_mem_2_reg_i_2 could not be replicated
+INFO: [Physopt 32-117] Net lock/clamp_out_2/data_clamped_reg[13]_0[1] could not be optimized because driver lock/clamp_out_2/r01_reg[19]_i_1__0 could not be replicated
+INFO: [Physopt 32-117] Net lock/clamp_out_2/data_clamped_reg[13]_0[6] could not be optimized because driver lock/clamp_out_2/r01_reg[24]_i_1__0 could not be replicated
+INFO: [Physopt 32-117] Net lock/clamp_out_2/data_clamped_reg[13]_0[10] could not be optimized because driver lock/clamp_out_2/r01_reg[28]_i_1__0 could not be replicated
+INFO: [Physopt 32-117] Net lock/clamp_out_2/data_clamped_reg[13]_0[4] could not be optimized because driver lock/clamp_out_2/r01_reg[22]_i_1__0 could not be replicated
+INFO: [Physopt 32-117] Net lock/clamp_out_1/data_clamped_reg[13]_1[7] could not be optimized because driver lock/clamp_out_1/r01_reg[25]_i_1 could not be replicated
+INFO: [Physopt 32-117] Net lock/clamp_out_1/data_clamped_reg[13]_1[6] could not be optimized because driver lock/clamp_out_1/r01_reg[24]_i_1 could not be replicated
+INFO: [Physopt 32-117] Net lock/clamp_out_1/data_clamped_reg[13]_1[9] could not be optimized because driver lock/clamp_out_1/r01_reg[27]_i_1 could not be replicated
+INFO: [Physopt 32-117] Net lock/clamp_out_2/data_clamped_reg[13]_0[13] could not be optimized because driver lock/clamp_out_2/r01_reg[31]_i_1__0 could not be replicated
+INFO: [Physopt 32-117] Net lock/clamp_out_2/data_clamped_reg[13]_0[3] could not be optimized because driver lock/clamp_out_2/r01_reg[21]_i_1__0 could not be replicated
+INFO: [Physopt 32-117] Net lock/clamp_out_1/data_clamped_reg[13]_1[13] could not be optimized because driver lock/clamp_out_1/r01_reg[31]_i_1 could not be replicated
+INFO: [Physopt 32-117] Net lock/clamp_out_1/data_clamped_reg[13]_1[8] could not be optimized because driver lock/clamp_out_1/r01_reg[26]_i_1 could not be replicated
+INFO: [Physopt 32-117] Net lock/clamp_out_2/data_clamped_reg[13]_0[2] could not be optimized because driver lock/clamp_out_2/r01_reg[20]_i_1__0 could not be replicated
+INFO: [Physopt 32-117] Net lock/clamp_out_2/data_clamped_reg[13]_0[9] could not be optimized because driver lock/clamp_out_2/r01_reg[27]_i_1__0 could not be replicated
+INFO: [Physopt 32-117] Net lock/clamp_out_1/data_clamped_reg[13]_1[10] could not be optimized because driver lock/clamp_out_1/r01_reg[28]_i_1 could not be replicated
+INFO: [Physopt 32-117] Net lock/clamp_out_2/data_clamped_reg[13]_0[12] could not be optimized because driver lock/clamp_out_2/r01_reg[30]_i_1__0 could not be replicated
+INFO: [Physopt 32-117] Net lock/clamp_out_1/data_clamped_reg[13]_1[0] could not be optimized because driver lock/clamp_out_1/r01_reg[18]_i_1 could not be replicated
+INFO: [Physopt 32-117] Net lock/clamp_out_1/data_clamped_reg[13]_1[2] could not be optimized because driver lock/clamp_out_1/r01_reg[20]_i_1 could not be replicated
+INFO: [Physopt 32-117] Net lock/clamp_out_2/data_clamped_reg[13]_0[7] could not be optimized because driver lock/clamp_out_2/r01_reg[25]_i_1__0 could not be replicated
+INFO: [Physopt 32-117] Net lock/clamp_out_2/data_clamped_reg[13]_0[8] could not be optimized because driver lock/clamp_out_2/r01_reg[26]_i_1__0 could not be replicated
+INFO: [Physopt 32-117] Net lock/clamp_out_2/data_clamped_reg[13]_0[11] could not be optimized because driver lock/clamp_out_2/r01_reg[29]_i_1__0 could not be replicated
+INFO: [Physopt 32-117] Net lock/clamp_out_1/data_clamped_reg[13]_1[5] could not be optimized because driver lock/clamp_out_1/r01_reg[23]_i_1 could not be replicated
+INFO: [Physopt 32-117] Net lock/clamp_out_2/data_clamped_reg[13]_0[5] could not be optimized because driver lock/clamp_out_2/r01_reg[23]_i_1__0 could not be replicated
+INFO: [Physopt 32-117] Net lock/clamp_out_2/data_clamped_reg[13]_0[0] could not be optimized because driver lock/clamp_out_2/r01_reg[18]_i_1__0 could not be replicated
+INFO: [Physopt 32-117] Net lock/clamp_out_1/data_clamped_reg[13]_1[1] could not be optimized because driver lock/clamp_out_1/r01_reg[19]_i_1 could not be replicated
+INFO: [Physopt 32-117] Net lock/clamp_out_1/data_clamped_reg[13]_1[11] could not be optimized because driver lock/clamp_out_1/r01_reg[29]_i_1 could not be replicated
+INFO: [Physopt 32-117] Net lock/clamp_out_1/data_clamped_reg[13]_1[4] could not be optimized because driver lock/clamp_out_1/r01_reg[22]_i_1 could not be replicated
+INFO: [Physopt 32-117] Net lock/clamp_out_1/data_clamped_reg[13]_1[3] could not be optimized because driver lock/clamp_out_1/r01_reg[21]_i_1 could not be replicated
+INFO: [Physopt 32-117] Net lock/clamp_out_1/data_clamped_reg[13]_1[12] could not be optimized because driver lock/clamp_out_1/r01_reg[30]_i_1 could not be replicated
+INFO: [Physopt 32-68] No nets found for critical-cell optimization.
+INFO: [Physopt 32-232] Optimized 0 net. Created 0 new instance.
+INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+INFO: [Physopt 32-457] Pass 1. Identified 2 candidate cells for DSP register optimization.
+INFO: [Physopt 32-665] Processed cell lock/pid_inst_1/total_sum. 14 registers were pushed out.
+INFO: [Physopt 32-665] Processed cell lock/pid_inst_1/total_sum. 1 register was pushed out.
+INFO: [Physopt 32-775] End 2 Pass. Optimized 2 nets or cells. Created 15 new cells, deleted 0 existing cell and moved 0 existing cell
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.011 . Memory (MB): peak = 1715.430 ; gain = 0.000
+INFO: [Physopt 32-1123] No candidate cells found for Shift Register to Pipeline optimization
+INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+INFO: [Physopt 32-677] No candidate cells for Shift Register optimization found in the design
+INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+INFO: [Physopt 32-526] No candidate cells for BRAM register optimization found in the design
+INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+INFO: [Physopt 32-846] No candidate cells for URAM register optimization found in the design
+INFO: [Physopt 32-775] End 2 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+INFO: [Physopt 32-949] No candidate nets found for HD net replication
+INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 1715.430 ; gain = 0.000
+
+Summary of Physical Synthesis Optimizations
+============================================
+
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+|  Optimization                                     |  Added Cells  |  Removed Cells  |  Optimized Cells/Nets  |  Dont Touch  |  Iterations  |  Elapsed   |
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+|  LUT Combining                                    |          159  |             78  |                   237  |           0  |           1  |  00:00:00  |
+|  Very High Fanout                                 |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  Critical Cell                                    |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  DSP Register                                     |           15  |              0  |                     2  |           0  |           1  |  00:00:00  |
+|  Shift Register to Pipeline                       |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  Shift Register                                   |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  BRAM Register                                    |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  URAM Register                                    |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  Dynamic/Static Region Interface Net Replication  |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  Total                                            |          174  |             78  |                   239  |           0  |           9  |  00:00:01  |
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+Phase 2.2.1 Physical Synthesis In Placer | Checksum: ce23d487
+
+Time (s): cpu = 00:00:36 ; elapsed = 00:00:21 . Memory (MB): peak = 1715.430 ; gain = 0.000
+Phase 2.2 Global Placement Core | Checksum: 16be648d6
+
+Time (s): cpu = 00:00:36 ; elapsed = 00:00:22 . Memory (MB): peak = 1715.430 ; gain = 0.000
+Phase 2 Global Placement | Checksum: 16be648d6
+
+Time (s): cpu = 00:00:36 ; elapsed = 00:00:22 . Memory (MB): peak = 1715.430 ; gain = 0.000
+
+Phase 3 Detail Placement
+
+Phase 3.1 Commit Multi Column Macros
+Phase 3.1 Commit Multi Column Macros | Checksum: 95ed9880
+
+Time (s): cpu = 00:00:38 ; elapsed = 00:00:23 . Memory (MB): peak = 1715.430 ; gain = 0.000
+
+Phase 3.2 Commit Most Macros & LUTRAMs
+Phase 3.2 Commit Most Macros & LUTRAMs | Checksum: cc98e040
+
+Time (s): cpu = 00:00:41 ; elapsed = 00:00:24 . Memory (MB): peak = 1715.430 ; gain = 0.000
+
+Phase 3.3 Area Swap Optimization
+Phase 3.3 Area Swap Optimization | Checksum: 11e01b480
+
+Time (s): cpu = 00:00:41 ; elapsed = 00:00:25 . Memory (MB): peak = 1715.430 ; gain = 0.000
+
+Phase 3.4 Pipeline Register Optimization
+Phase 3.4 Pipeline Register Optimization | Checksum: a495083f
+
+Time (s): cpu = 00:00:41 ; elapsed = 00:00:25 . Memory (MB): peak = 1715.430 ; gain = 0.000
+
+Phase 3.5 Fast Optimization
+Phase 3.5 Fast Optimization | Checksum: 13f411398
+
+Time (s): cpu = 00:00:48 ; elapsed = 00:00:31 . Memory (MB): peak = 1715.430 ; gain = 0.000
+
+Phase 3.6 Small Shape Detail Placement
+Phase 3.6 Small Shape Detail Placement | Checksum: 12182ea5f
+
+Time (s): cpu = 00:00:53 ; elapsed = 00:00:36 . Memory (MB): peak = 1715.430 ; gain = 0.000
+
+Phase 3.7 Re-assign LUT pins
+Phase 3.7 Re-assign LUT pins | Checksum: a680ed6d
+
+Time (s): cpu = 00:00:54 ; elapsed = 00:00:37 . Memory (MB): peak = 1715.430 ; gain = 0.000
+
+Phase 3.8 Pipeline Register Optimization
+Phase 3.8 Pipeline Register Optimization | Checksum: 13866e840
+
+Time (s): cpu = 00:00:54 ; elapsed = 00:00:37 . Memory (MB): peak = 1715.430 ; gain = 0.000
+
+Phase 3.9 Fast Optimization
+Phase 3.9 Fast Optimization | Checksum: 114173d2a
+
+Time (s): cpu = 00:01:03 ; elapsed = 00:00:45 . Memory (MB): peak = 1715.430 ; gain = 0.000
+Phase 3 Detail Placement | Checksum: 114173d2a
+
+Time (s): cpu = 00:01:04 ; elapsed = 00:00:45 . Memory (MB): peak = 1715.430 ; gain = 0.000
+
+Phase 4 Post Placement Optimization and Clean-Up
+
+Phase 4.1 Post Commit Optimization
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+
+Phase 4.1.1 Post Placement Optimization
+Post Placement Optimization Initialization | Checksum: 1300d146e
+
+Phase 4.1.1.1 BUFG Insertion
+
+Starting Physical Synthesis Task
+
+Phase 1 Physical Synthesis Initialization
+INFO: [Physopt 32-721] Multithreading enabled for phys_opt_design using a maximum of 2 CPUs
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-14.248 | TNS=-2906.383 |
+Phase 1 Physical Synthesis Initialization | Checksum: e2728618
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.613 . Memory (MB): peak = 1715.430 ; gain = 0.000
+INFO: [Place 46-33] Processed net i_scope/i_dfilt1_chb/SR[0], BUFG insertion was skipped due to placement/routing conflicts.
+INFO: [Place 46-56] BUFG insertion identified 1 candidate nets. Inserted BUFG: 0, Replicated BUFG Driver: 0, Skipped due to Placement/Routing Conflicts: 1, Skipped due to Timing Degradation: 0, Skipped due to Illegal Netlist: 0.
+Ending Physical Synthesis Task | Checksum: 1c2bfc2f0
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.805 . Memory (MB): peak = 1715.430 ; gain = 0.000
+Phase 4.1.1.1 BUFG Insertion | Checksum: 1300d146e
+
+Time (s): cpu = 00:01:10 ; elapsed = 00:00:50 . Memory (MB): peak = 1715.430 ; gain = 0.000
+INFO: [Place 30-746] Post Placement Timing Summary WNS=-12.707. For the most accurate timing information please run report_timing.
+Phase 4.1.1 Post Placement Optimization | Checksum: 15948dca3
+
+Time (s): cpu = 00:01:54 ; elapsed = 00:01:32 . Memory (MB): peak = 1715.430 ; gain = 0.000
+Phase 4.1 Post Commit Optimization | Checksum: 15948dca3
+
+Time (s): cpu = 00:01:54 ; elapsed = 00:01:33 . Memory (MB): peak = 1715.430 ; gain = 0.000
+
+Phase 4.2 Post Placement Cleanup
+Phase 4.2 Post Placement Cleanup | Checksum: 15948dca3
+
+Time (s): cpu = 00:01:54 ; elapsed = 00:01:33 . Memory (MB): peak = 1715.430 ; gain = 0.000
+
+Phase 4.3 Placer Reporting
+Phase 4.3 Placer Reporting | Checksum: 15948dca3
+
+Time (s): cpu = 00:01:54 ; elapsed = 00:01:33 . Memory (MB): peak = 1715.430 ; gain = 0.000
+
+Phase 4.4 Final Placement Cleanup
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.006 . Memory (MB): peak = 1715.430 ; gain = 0.000
+Phase 4.4 Final Placement Cleanup | Checksum: 1756f529e
+
+Time (s): cpu = 00:01:54 ; elapsed = 00:01:33 . Memory (MB): peak = 1715.430 ; gain = 0.000
+Phase 4 Post Placement Optimization and Clean-Up | Checksum: 1756f529e
+
+Time (s): cpu = 00:01:54 ; elapsed = 00:01:33 . Memory (MB): peak = 1715.430 ; gain = 0.000
+Ending Placer Task | Checksum: c14c3480
+
+Time (s): cpu = 00:01:54 ; elapsed = 00:01:33 . Memory (MB): peak = 1715.430 ; gain = 0.000
+INFO: [Common 17-83] Releasing license: Implementation
+146 Infos, 20 Warnings, 16 Critical Warnings and 0 Errors encountered.
+place_design completed successfully
+place_design: Time (s): cpu = 00:01:57 ; elapsed = 00:01:35 . Memory (MB): peak = 1715.430 ; gain = 0.000
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:03 ; elapsed = 00:00:01 . Memory (MB): peak = 1715.430 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/Users/travi/Desktop/FPGA_Research/Code/RedPitaya-master/fpga/prj/v0.94/project/redpitaya.runs/impl_1/red_pitaya_top_placed.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_io -file red_pitaya_top_io_placed.rpt
+report_io: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.108 . Memory (MB): peak = 1715.430 ; gain = 0.000
+INFO: [runtcl-4] Executing : report_utilization -file red_pitaya_top_utilization_placed.rpt -pb red_pitaya_top_utilization_placed.pb
+INFO: [runtcl-4] Executing : report_control_sets -verbose -file red_pitaya_top_control_sets_placed.rpt
+report_control_sets: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.037 . Memory (MB): peak = 1715.430 ; gain = 0.000
+Command: phys_opt_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7z010'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z010'
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 1715.430 ; gain = 0.000
+
+Starting Physical Synthesis Task
+
+Phase 1 Physical Synthesis Initialization
+INFO: [Physopt 32-721] Multithreading enabled for phys_opt_design using a maximum of 2 CPUs
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-12.707 | TNS=-2762.004 |
+Phase 1 Physical Synthesis Initialization | Checksum: 235a43427
+
+Time (s): cpu = 00:00:06 ; elapsed = 00:00:02 . Memory (MB): peak = 1715.430 ; gain = 0.000
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-12.707 | TNS=-2762.004 |
+
+Phase 2 DSP Register Optimization
+INFO: [Physopt 32-456] No candidate cells for DSP register optimization found in the design.
+INFO: [Physopt 32-775] End 2 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+Phase 2 DSP Register Optimization | Checksum: 235a43427
+
+Time (s): cpu = 00:00:06 ; elapsed = 00:00:02 . Memory (MB): peak = 1715.430 ; gain = 0.000
+
+Phase 3 Critical Path Optimization
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-12.707 | TNS=-2762.004 |
+INFO: [Physopt 32-702] Processed net lock/calib_out_2/calib_out_2_data[2]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net pll/pll_adc_clk. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-735] Processed net lock/calib_out_2/p_1_in[2]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-12.704 | TNS=-2761.670 |
+INFO: [Physopt 32-702] Processed net lock/calib_out_2/calib_out_2_data[11]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-735] Processed net lock/calib_out_2/p_1_in[11]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-12.651 | TNS=-2761.343 |
+INFO: [Physopt 32-702] Processed net lock/calib_out_2/calib_out_2_data[5]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-735] Processed net lock/calib_out_2/p_1_in[5]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-12.579 | TNS=-2761.102 |
+INFO: [Physopt 32-702] Processed net lock/calib_out_2/calib_out_2_data[1]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-735] Processed net lock/calib_out_2/p_1_in[1]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-12.579 | TNS=-2761.001 |
+INFO: [Physopt 32-702] Processed net lock/calib_out_2/calib_out_2_data[4]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-735] Processed net lock/calib_out_2/p_1_in[4]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-12.578 | TNS=-2760.964 |
+INFO: [Physopt 32-702] Processed net lock/calib_out_2/calib_out_2_data[10]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-735] Processed net lock/calib_out_2/p_1_in[10]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-12.578 | TNS=-2760.738 |
+INFO: [Physopt 32-702] Processed net lock/calib_out_2/calib_out_2_data[6]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-735] Processed net lock/calib_out_2/p_1_in[6]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-12.575 | TNS=-2760.512 |
+INFO: [Physopt 32-702] Processed net lock/calib_out_2/calib_out_2_data[8]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-735] Processed net lock/calib_out_2/p_1_in[8]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-12.574 | TNS=-2760.288 |
+INFO: [Physopt 32-702] Processed net lock/calib_out_2/calib_out_2_data[0]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-735] Processed net lock/calib_out_2/p_1_in[0]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-12.574 | TNS=-2760.207 |
+INFO: [Physopt 32-702] Processed net lock/calib_out_2/calib_out_2_data[7]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-735] Processed net lock/calib_out_2/p_1_in[7]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-12.563 | TNS=-2759.981 |
+INFO: [Physopt 32-702] Processed net lock/calib_out_2/calib_out_2_data[3]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-735] Processed net lock/calib_out_2/p_1_in[3]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-12.547 | TNS=-2759.777 |
+INFO: [Physopt 32-702] Processed net lock/calib_out_1/calib_out_1_data[3]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-735] Processed net lock/calib_out_1/p_1_in[3]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-12.543 | TNS=-2759.471 |
+INFO: [Physopt 32-735] Processed net lock/calib_out_2/p_1_in[4]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-12.523 | TNS=-2759.404 |
+INFO: [Physopt 32-702] Processed net lock/calib_out_2/calib_out_2_data[9]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-735] Processed net lock/calib_out_2/p_1_in[9]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-12.511 | TNS=-2759.155 |
+INFO: [Physopt 32-702] Processed net lock/calib_out_2/calib_out_2_data[12]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-735] Processed net lock/calib_out_2/p_1_in[12]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-12.507 | TNS=-2758.938 |
+INFO: [Physopt 32-702] Processed net lock/calib_out_1/calib_out_1_data[12]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-735] Processed net lock/calib_out_1/p_1_in[12]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-12.498 | TNS=-2758.702 |
+INFO: [Physopt 32-702] Processed net lock/calib_out_1/calib_out_1_data[4]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-735] Processed net lock/calib_out_1/p_1_in[4]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-12.497 | TNS=-2758.600 |
+INFO: [Physopt 32-702] Processed net lock/calib_out_1/calib_out_1_data[2]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-735] Processed net lock/calib_out_1/p_1_in[2]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-12.496 | TNS=-2758.331 |
+INFO: [Physopt 32-702] Processed net lock/calib_out_1/calib_out_1_data[5]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-735] Processed net lock/calib_out_1/p_1_in[5]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-12.493 | TNS=-2758.230 |
+INFO: [Physopt 32-702] Processed net lock/calib_out_2/p_1_in[0]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net lock/calib_in_1/switch_op1_out_reg[0]_4[3].  Did not re-place instance lock/calib_in_1/mult_raw_i_13__0
+INFO: [Physopt 32-735] Processed net lock/calib_in_1/switch_op1_out_reg[0]_4[3]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-12.474 | TNS=-2757.825 |
+INFO: [Physopt 32-702] Processed net lock/calib_out_1/calib_out_1_data[7]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-735] Processed net lock/calib_out_1/p_1_in[7]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-12.474 | TNS=-2757.788 |
+INFO: [Physopt 32-702] Processed net lock/calib_out_1/calib_out_1_data[8]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-735] Processed net lock/calib_out_1/p_1_in[8]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-12.473 | TNS=-2757.688 |
+INFO: [Physopt 32-702] Processed net lock/calib_out_1/calib_out_1_data[10]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-735] Processed net lock/calib_out_1/p_1_in[10]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-12.473 | TNS=-2757.462 |
+INFO: [Physopt 32-702] Processed net lock/calib_out_1/calib_out_1_data[6]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-735] Processed net lock/calib_out_1/p_1_in[6]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-12.465 | TNS=-2757.236 |
+INFO: [Physopt 32-702] Processed net lock/calib_out_1/calib_out_1_data[0]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-735] Processed net lock/calib_out_1/p_1_in[0]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-12.464 | TNS=-2757.024 |
+INFO: [Physopt 32-662] Processed net lock/calib_in_1/switch_op1_out_reg[0]_4[3].  Did not re-place instance lock/calib_in_1/mult_raw_i_13__0
+INFO: [Physopt 32-702] Processed net lock/calib_in_1/switch_op1_out_reg[0]_4[3]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net lock/calib_in_1/switch_op1_out_reg[0]_0[2].  Did not re-place instance lock/calib_in_1/mult_raw_i_39
+INFO: [Physopt 32-710] Processed net lock/calib_in_1/switch_op1_out_reg[0]_4[3]. Critical path length was reduced through logic transformation on cell lock/calib_in_1/mult_raw_i_13__0_comp.
+INFO: [Physopt 32-735] Processed net lock/calib_in_1/switch_op1_out_reg[0]_0[2]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-12.460 | TNS=-2756.118 |
+INFO: [Physopt 32-702] Processed net lock/calib_out_1/calib_out_1_data[9]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-735] Processed net lock/calib_out_1/p_1_in[9]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-12.438 | TNS=-2755.854 |
+INFO: [Physopt 32-735] Processed net lock/calib_out_1/p_1_in[7]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-12.417 | TNS=-2755.802 |
+INFO: [Physopt 32-702] Processed net lock/calib_out_1/calib_out_1_data[11]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-735] Processed net lock/calib_out_1/p_1_in[11]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-12.405 | TNS=-2755.743 |
+INFO: [Physopt 32-702] Processed net lock/calib_out_1/calib_out_1_data[1]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-735] Processed net lock/calib_out_1/p_1_in[1]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-12.399 | TNS=-2755.726 |
+INFO: [Physopt 32-662] Processed net lock/calib_in_1/op2_out[3].  Did not re-place instance lock/calib_in_1/mult_raw_i_40
+INFO: [Physopt 32-710] Processed net lock/calib_in_1/switch_op1_out_reg[0]_4[3]. Critical path length was reduced through logic transformation on cell lock/calib_in_1/mult_raw_i_13__0_comp_1.
+INFO: [Physopt 32-735] Processed net lock/calib_in_1/op2_out[3]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-12.397 | TNS=-2754.985 |
+INFO: [Physopt 32-702] Processed net lock/calib_out_1/p_1_in[4]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net lock/lia_inst_1/lia_clamp/switch_op1_out_reg[0]_15[6].  Did not re-place instance lock/lia_inst_1/lia_clamp/mult_raw_i_6__0
+INFO: [Physopt 32-735] Processed net lock/lia_inst_1/lia_clamp/switch_op1_out_reg[0]_15[6]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-12.396 | TNS=-2754.971 |
+INFO: [Physopt 32-662] Processed net lock/calib_in_1/lin_raw_1[2].  Did not re-place instance lock/calib_in_1/mult_raw_i_14
+INFO: [Physopt 32-702] Processed net lock/calib_in_1/lin_raw_1[2]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net lock/lia_inst_1/lia_clamp/data_clamped_reg[2]_0.  Did not re-place instance lock/lia_inst_1/lia_clamp/mult_raw_i_70
+INFO: [Physopt 32-710] Processed net lock/calib_in_1/lin_raw_1[2]. Critical path length was reduced through logic transformation on cell lock/calib_in_1/mult_raw_i_14_comp.
+INFO: [Physopt 32-735] Processed net lock/lia_inst_1/lia_clamp/data_clamped_reg[2]_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-12.388 | TNS=-2754.859 |
+INFO: [Physopt 32-662] Processed net lock/calib_in_1/mult_raw_i_68_n_0.  Did not re-place instance lock/calib_in_1/mult_raw_i_68
+INFO: [Physopt 32-710] Processed net lock/calib_in_1/lin_raw_1[2]. Critical path length was reduced through logic transformation on cell lock/calib_in_1/mult_raw_i_14_comp_1.
+INFO: [Physopt 32-735] Processed net lock/calib_in_1/mult_raw_i_68_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-12.377 | TNS=-2754.708 |
+INFO: [Physopt 32-662] Processed net lock/lia_inst_1/lia_clamp/switch_op1_out_reg[0]_15[3].  Did not re-place instance lock/lia_inst_1/lia_clamp/mult_raw_i_9__0
+INFO: [Physopt 32-735] Processed net lock/lia_inst_1/lia_clamp/switch_op1_out_reg[0]_15[3]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-12.351 | TNS=-2754.344 |
+INFO: [Physopt 32-662] Processed net lock/calib_in_1/lin_raw_1[3].  Did not re-place instance lock/calib_in_1/mult_raw_i_13
+INFO: [Physopt 32-702] Processed net lock/calib_in_1/lin_raw_1[3]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net lock/calib_in_1/mult_raw_i_63_n_0.  Did not re-place instance lock/calib_in_1/mult_raw_i_63
+INFO: [Physopt 32-710] Processed net lock/calib_in_1/lin_raw_1[3]. Critical path length was reduced through logic transformation on cell lock/calib_in_1/mult_raw_i_13_comp.
+INFO: [Physopt 32-735] Processed net lock/calib_in_1/mult_raw_i_63_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-12.346 | TNS=-2754.275 |
+INFO: [Physopt 32-662] Processed net lock/pid_inst_1/pid_clamp/data_clamped_reg[3]_0.  Did not re-place instance lock/pid_inst_1/pid_clamp/mult_raw_i_65
+INFO: [Physopt 32-710] Processed net lock/calib_in_1/lin_raw_1[3]. Critical path length was reduced through logic transformation on cell lock/calib_in_1/mult_raw_i_13_comp_1.
+INFO: [Physopt 32-735] Processed net lock/pid_inst_1/pid_clamp/data_clamped_reg[3]_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-12.346 | TNS=-2754.140 |
+INFO: [Physopt 32-662] Processed net lock/calib_in_1/switch_op1_out_reg[0]_4[1].  Did not re-place instance lock/calib_in_1/mult_raw_i_15__0
+INFO: [Physopt 32-735] Processed net lock/calib_in_1/switch_op1_out_reg[0]_4[1]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-12.337 | TNS=-2754.015 |
+INFO: [Physopt 32-662] Processed net lock/lia_inst_1/lia_clamp/switch_op2_out_reg[0]_4[8].  Did not re-place instance lock/lia_inst_1/lia_clamp/mult_raw_i_4__1
+INFO: [Physopt 32-702] Processed net lock/lia_inst_1/lia_clamp/switch_op2_out_reg[0]_4[8]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-663] Processed net lock/lia_inst_1/lia_clamp/op2_out[12].  Re-placed instance lock/lia_inst_1/lia_clamp/mult_raw_i_27
+INFO: [Physopt 32-735] Processed net lock/lia_inst_1/lia_clamp/op2_out[12]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-12.337 | TNS=-2754.015 |
+INFO: [Physopt 32-662] Processed net lock/lia_inst_1/lia_clamp/switch_op2_out_reg[0]_4[5].  Did not re-place instance lock/lia_inst_1/lia_clamp/mult_raw_i_7__1
+INFO: [Physopt 32-702] Processed net lock/lia_inst_1/lia_clamp/switch_op2_out_reg[0]_4[5]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-663] Processed net lock/lia_inst_1/lia_clamp/op2_out[9].  Re-placed instance lock/lia_inst_1/lia_clamp/mult_raw_i_39__0
+INFO: [Physopt 32-735] Processed net lock/lia_inst_1/lia_clamp/op2_out[9]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-12.333 | TNS=-2753.861 |
+INFO: [Physopt 32-662] Processed net lock/lia_inst_1/lia_clamp/switch_op2_out_reg[0]_4[6].  Did not re-place instance lock/lia_inst_1/lia_clamp/mult_raw_i_6__1
+INFO: [Physopt 32-735] Processed net lock/lia_inst_1/lia_clamp/switch_op2_out_reg[0]_4[6]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-12.329 | TNS=-2753.749 |
+INFO: [Physopt 32-662] Processed net lock/lia_inst_1/lia_clamp/switch_op1_out_reg[0]_15[5].  Did not re-place instance lock/lia_inst_1/lia_clamp/mult_raw_i_7__0
+INFO: [Physopt 32-702] Processed net lock/lia_inst_1/lia_clamp/switch_op1_out_reg[0]_15[5]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net lock/lia_inst_1/lia_clamp/op1_out[9].  Did not re-place instance lock/lia_inst_1/lia_clamp/mult_raw_i_38
+INFO: [Physopt 32-710] Processed net lock/lia_inst_1/lia_clamp/switch_op1_out_reg[0]_15[5]. Critical path length was reduced through logic transformation on cell lock/lia_inst_1/lia_clamp/mult_raw_i_7__0_comp.
+INFO: [Physopt 32-735] Processed net lock/lia_inst_1/lia_clamp/op1_out[9]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-12.325 | TNS=-2753.475 |
+INFO: [Physopt 32-662] Processed net lock/lia_inst_1/lia_clamp/switch_op2_out_reg[0]_4[2].  Did not re-place instance lock/lia_inst_1/lia_clamp/mult_raw_i_10__1
+INFO: [Physopt 32-702] Processed net lock/lia_inst_1/lia_clamp/switch_op2_out_reg[0]_4[2]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net lock/lia_inst_1/lia_clamp/op2_out[6].  Did not re-place instance lock/lia_inst_1/lia_clamp/mult_raw_i_50
+INFO: [Physopt 32-710] Processed net lock/lia_inst_1/lia_clamp/switch_op2_out_reg[0]_4[2]. Critical path length was reduced through logic transformation on cell lock/lia_inst_1/lia_clamp/mult_raw_i_10__1_comp.
+INFO: [Physopt 32-735] Processed net lock/lia_inst_1/lia_clamp/op2_out[6]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-12.323 | TNS=-2753.447 |
+INFO: [Physopt 32-662] Processed net lock/lia_inst_1/lia_clamp/op1_out[9].  Did not re-place instance lock/lia_inst_1/lia_clamp/mult_raw_i_38
+INFO: [Physopt 32-710] Processed net lock/lia_inst_1/lia_clamp/switch_op2_out_reg[0]_4[5]. Critical path length was reduced through logic transformation on cell lock/lia_inst_1/lia_clamp/mult_raw_i_7__1_comp.
+INFO: [Physopt 32-735] Processed net lock/lia_inst_1/lia_clamp/op1_out[9]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-12.318 | TNS=-2753.381 |
+INFO: [Physopt 32-662] Processed net lock/lia_inst_1/lia_clamp/switch_op2_out_reg[0]_4[1].  Did not re-place instance lock/lia_inst_1/lia_clamp/mult_raw_i_11__0
+INFO: [Physopt 32-735] Processed net lock/lia_inst_1/lia_clamp/switch_op2_out_reg[0]_4[1]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-12.309 | TNS=-2753.115 |
+INFO: [Physopt 32-662] Processed net lock/lia_inst_1/lia_clamp/switch_op1_out_reg[0]_15[8].  Did not re-place instance lock/lia_inst_1/lia_clamp/mult_raw_i_4__0
+INFO: [Physopt 32-702] Processed net lock/lia_inst_1/lia_clamp/switch_op1_out_reg[0]_15[8]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net lock/lia_inst_1/lia_clamp/op1_out[12].  Did not re-place instance lock/lia_inst_1/lia_clamp/mult_raw_i_26
+INFO: [Physopt 32-710] Processed net lock/lia_inst_1/lia_clamp/switch_op1_out_reg[0]_15[8]. Critical path length was reduced through logic transformation on cell lock/lia_inst_1/lia_clamp/mult_raw_i_4__0_comp.
+INFO: [Physopt 32-735] Processed net lock/lia_inst_1/lia_clamp/op1_out[12]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-12.302 | TNS=-2753.022 |
+INFO: [Physopt 32-662] Processed net lock/calib_in_1/lin_raw_1[0].  Did not re-place instance lock/calib_in_1/mult_raw_i_16
+INFO: [Physopt 32-702] Processed net lock/calib_in_1/lin_raw_1[0]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net lock/calib_in_1/mult_raw_i_78_n_0.  Did not re-place instance lock/calib_in_1/mult_raw_i_78
+INFO: [Physopt 32-710] Processed net lock/calib_in_1/lin_raw_1[0]. Critical path length was reduced through logic transformation on cell lock/calib_in_1/mult_raw_i_16_comp.
+INFO: [Physopt 32-735] Processed net lock/calib_in_1/mult_raw_i_78_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-12.299 | TNS=-2752.872 |
+INFO: [Physopt 32-662] Processed net lock/lia_inst_1/lia_clamp/op1_out[12].  Did not re-place instance lock/lia_inst_1/lia_clamp/mult_raw_i_26
+INFO: [Physopt 32-710] Processed net lock/lia_inst_1/lia_clamp/switch_op2_out_reg[0]_4[8]. Critical path length was reduced through logic transformation on cell lock/lia_inst_1/lia_clamp/mult_raw_i_4__1_comp.
+INFO: [Physopt 32-735] Processed net lock/lia_inst_1/lia_clamp/op1_out[12]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-12.291 | TNS=-2752.485 |
+INFO: [Physopt 32-662] Processed net lock/calib_in_1/lin_raw_1[1].  Did not re-place instance lock/calib_in_1/mult_raw_i_15
+INFO: [Physopt 32-702] Processed net lock/calib_in_1/lin_raw_1[1]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net lock/calib_in_1/switch_out_1_reg[4].  Did not re-place instance lock/calib_in_1/mult_raw_i_72
+INFO: [Physopt 32-710] Processed net lock/calib_in_1/lin_raw_1[1]. Critical path length was reduced through logic transformation on cell lock/calib_in_1/mult_raw_i_15_comp.
+INFO: [Physopt 32-735] Processed net lock/calib_in_1/switch_out_1_reg[4]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-12.288 | TNS=-2752.442 |
+INFO: [Physopt 32-662] Processed net lock/lia_inst_1/lia_clamp/op2_out[9].  Did not re-place instance lock/lia_inst_1/lia_clamp/mult_raw_i_39__0
+INFO: [Physopt 32-710] Processed net lock/lia_inst_1/lia_clamp/switch_op1_out_reg[0]_15[5]. Critical path length was reduced through logic transformation on cell lock/lia_inst_1/lia_clamp/mult_raw_i_7__0_comp_1.
+INFO: [Physopt 32-735] Processed net lock/lia_inst_1/lia_clamp/op2_out[9]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-12.286 | TNS=-2752.415 |
+INFO: [Physopt 32-662] Processed net lock/lia_inst_1/lia_clamp/switch_op1_out_reg[0]_15[2].  Did not re-place instance lock/lia_inst_1/lia_clamp/mult_raw_i_10__0
+INFO: [Physopt 32-702] Processed net lock/lia_inst_1/lia_clamp/switch_op1_out_reg[0]_15[2]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net lock/lia_inst_1/lia_clamp/op2_out[6].  Did not re-place instance lock/lia_inst_1/lia_clamp/mult_raw_i_50
+INFO: [Physopt 32-710] Processed net lock/lia_inst_1/lia_clamp/switch_op1_out_reg[0]_15[2]. Critical path length was reduced through logic transformation on cell lock/lia_inst_1/lia_clamp/mult_raw_i_10__0_comp.
+INFO: [Physopt 32-735] Processed net lock/lia_inst_1/lia_clamp/op2_out[6]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-12.286 | TNS=-2752.415 |
+INFO: [Physopt 32-662] Processed net lock/lia_inst_1/lia_clamp/switch_op1_out_reg[0]_15[0].  Did not re-place instance lock/lia_inst_1/lia_clamp/mult_raw_i_12
+INFO: [Physopt 32-702] Processed net lock/lia_inst_1/lia_clamp/switch_op1_out_reg[0]_15[0]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net lock/lia_inst_1/lia_clamp/switch_op1_out_reg[0]_1.  Did not re-place instance lock/lia_inst_1/lia_clamp/mult_raw_i_58
+INFO: [Physopt 32-710] Processed net lock/lia_inst_1/lia_clamp/switch_op1_out_reg[0]_15[0]. Critical path length was reduced through logic transformation on cell lock/lia_inst_1/lia_clamp/mult_raw_i_12_comp.
+INFO: [Physopt 32-735] Processed net lock/lia_inst_1/lia_clamp/switch_op1_out_reg[0]_1. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-12.271 | TNS=-2752.095 |
+INFO: [Physopt 32-662] Processed net lock/lia_inst_1/lia_clamp/op2_out[9].  Did not re-place instance lock/lia_inst_1/lia_clamp/mult_raw_i_39__0
+INFO: [Physopt 32-710] Processed net lock/lia_inst_1/lia_clamp/switch_op2_out_reg[0]_4[5]. Critical path length was reduced through logic transformation on cell lock/lia_inst_1/lia_clamp/mult_raw_i_7__1_comp_1.
+INFO: [Physopt 32-735] Processed net lock/lia_inst_1/lia_clamp/op2_out[9]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-12.270 | TNS=-2752.081 |
+INFO: [Physopt 32-662] Processed net lock/lia_inst_1/lia_clamp/op2_out[12].  Did not re-place instance lock/lia_inst_1/lia_clamp/mult_raw_i_27
+INFO: [Physopt 32-710] Processed net lock/lia_inst_1/lia_clamp/switch_op2_out_reg[0]_4[8]. Critical path length was reduced through logic transformation on cell lock/lia_inst_1/lia_clamp/mult_raw_i_4__1_comp_1.
+INFO: [Physopt 32-735] Processed net lock/lia_inst_1/lia_clamp/op2_out[12]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-12.265 | TNS=-2752.018 |
+INFO: [Physopt 32-662] Processed net lock/lia_inst_1/lia_clamp/switch_op2_out_reg[0]_4[3].  Did not re-place instance lock/lia_inst_1/lia_clamp/mult_raw_i_9__1
+INFO: [Physopt 32-702] Processed net lock/lia_inst_1/lia_clamp/switch_op2_out_reg[0]_4[3]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net lock/lia_inst_1/lia_clamp/op2_out[7].  Did not re-place instance lock/lia_inst_1/lia_clamp/mult_raw_i_46
+INFO: [Physopt 32-710] Processed net lock/lia_inst_1/lia_clamp/switch_op2_out_reg[0]_4[3]. Critical path length was reduced through logic transformation on cell lock/lia_inst_1/lia_clamp/mult_raw_i_9__1_comp.
+INFO: [Physopt 32-735] Processed net lock/lia_inst_1/lia_clamp/op2_out[7]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-12.265 | TNS=-2752.023 |
+INFO: [Physopt 32-662] Processed net lock/lia_inst_1/lia_clamp/switch_op2_out_reg[0]_4[1].  Did not re-place instance lock/lia_inst_1/lia_clamp/mult_raw_i_11__0
+INFO: [Physopt 32-702] Processed net lock/lia_inst_1/lia_clamp/switch_op2_out_reg[0]_4[1]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net lock/lia_inst_1/lia_clamp/op2_out[5].  Did not re-place instance lock/lia_inst_1/lia_clamp/mult_raw_i_55
+INFO: [Physopt 32-710] Processed net lock/lia_inst_1/lia_clamp/switch_op2_out_reg[0]_4[1]. Critical path length was reduced through logic transformation on cell lock/lia_inst_1/lia_clamp/mult_raw_i_11__0_comp.
+INFO: [Physopt 32-735] Processed net lock/lia_inst_1/lia_clamp/op2_out[5]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-12.263 | TNS=-2751.990 |
+INFO: [Physopt 32-662] Processed net lock/pid_inst_1/pid_clamp/data_clamped_reg[1]_0.  Did not re-place instance lock/pid_inst_1/pid_clamp/mult_raw_i_73
+INFO: [Physopt 32-710] Processed net lock/calib_in_1/lin_raw_1[1]. Critical path length was reduced through logic transformation on cell lock/calib_in_1/mult_raw_i_15_comp_1.
+INFO: [Physopt 32-735] Processed net lock/pid_inst_1/pid_clamp/data_clamped_reg[1]_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-12.262 | TNS=-2751.939 |
+INFO: [Physopt 32-662] Processed net lock/lia_inst_1/lia_clamp/switch_op2_out_reg[0]_4[7].  Did not re-place instance lock/lia_inst_1/lia_clamp/mult_raw_i_5__1
+INFO: [Physopt 32-735] Processed net lock/lia_inst_1/lia_clamp/switch_op2_out_reg[0]_4[7]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-12.262 | TNS=-2751.939 |
+INFO: [Physopt 32-662] Processed net lock/lia_inst_1/lia_clamp/switch_op2_out_reg[0]_4[4].  Did not re-place instance lock/lia_inst_1/lia_clamp/mult_raw_i_8__1
+INFO: [Physopt 32-702] Processed net lock/lia_inst_1/lia_clamp/switch_op2_out_reg[0]_4[4]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net lock/lia_inst_1/lia_clamp/op2_out[8].  Did not re-place instance lock/lia_inst_1/lia_clamp/mult_raw_i_43__0
+INFO: [Physopt 32-710] Processed net lock/lia_inst_1/lia_clamp/switch_op2_out_reg[0]_4[4]. Critical path length was reduced through logic transformation on cell lock/lia_inst_1/lia_clamp/mult_raw_i_8__1_comp.
+INFO: [Physopt 32-735] Processed net lock/lia_inst_1/lia_clamp/op2_out[8]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-12.259 | TNS=-2751.791 |
+INFO: [Physopt 32-662] Processed net lock/calib_in_1/switch_op1_out_reg[0]_0[1].  Did not re-place instance lock/calib_in_1/mult_raw_i_43
+INFO: [Physopt 32-710] Processed net lock/calib_in_1/lin_raw_1[2]. Critical path length was reduced through logic transformation on cell lock/calib_in_1/mult_raw_i_14_comp.
+INFO: [Physopt 32-735] Processed net lock/calib_in_1/switch_op1_out_reg[0]_0[1]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-12.256 | TNS=-2751.749 |
+INFO: [Physopt 32-662] Processed net lock/lia_inst_1/lia_clamp/op2_out[12].  Did not re-place instance lock/lia_inst_1/lia_clamp/mult_raw_i_27
+INFO: [Physopt 32-710] Processed net lock/lia_inst_1/lia_clamp/switch_op1_out_reg[0]_15[8]. Critical path length was reduced through logic transformation on cell lock/lia_inst_1/lia_clamp/mult_raw_i_4__0_comp_1.
+INFO: [Physopt 32-735] Processed net lock/lia_inst_1/lia_clamp/op2_out[12]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-12.254 | TNS=-2751.726 |
+INFO: [Physopt 32-662] Processed net lock/lia_inst_1/lia_clamp/switch_op1_out_reg[0]_15[1].  Did not re-place instance lock/lia_inst_1/lia_clamp/mult_raw_i_11
+INFO: [Physopt 32-702] Processed net lock/lia_inst_1/lia_clamp/switch_op1_out_reg[0]_15[1]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net lock/lia_inst_1/lia_clamp/op1_out[5].  Did not re-place instance lock/lia_inst_1/lia_clamp/mult_raw_i_54
+INFO: [Physopt 32-710] Processed net lock/lia_inst_1/lia_clamp/switch_op1_out_reg[0]_15[1]. Critical path length was reduced through logic transformation on cell lock/lia_inst_1/lia_clamp/mult_raw_i_11_comp.
+INFO: [Physopt 32-735] Processed net lock/lia_inst_1/lia_clamp/op1_out[5]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-12.251 | TNS=-2751.397 |
+INFO: [Physopt 32-662] Processed net lock/calib_in_1/switch_op1_out_reg[0]_4[2].  Did not re-place instance lock/calib_in_1/mult_raw_i_14__0
+INFO: [Physopt 32-702] Processed net lock/calib_in_1/switch_op1_out_reg[0]_4[2]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net lock/calib_in_1/op2_out[2].  Did not re-place instance lock/calib_in_1/mult_raw_i_44
+INFO: [Physopt 32-710] Processed net lock/calib_in_1/switch_op1_out_reg[0]_4[2]. Critical path length was reduced through logic transformation on cell lock/calib_in_1/mult_raw_i_14__0_comp.
+INFO: [Physopt 32-735] Processed net lock/calib_in_1/op2_out[2]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-12.251 | TNS=-2751.403 |
+INFO: [Physopt 32-702] Processed net pwm[3]/dac_pwm_o_OBUF[0]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net pll/pll_pwm_clk. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net pwm[3]/pwm_o_i_3_n_0.  Did not re-place instance pwm[3]/pwm_o_i_3
+INFO: [Physopt 32-735] Processed net pwm[3]/pwm_o_i_3_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-12.251 | TNS=-2751.400 |
+INFO: [Physopt 32-662] Processed net pwm[3]/pwm_o_i_4_n_0.  Did not re-place instance pwm[3]/pwm_o_i_4
+INFO: [Physopt 32-735] Processed net pwm[3]/pwm_o_i_4_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-12.251 | TNS=-2751.398 |
+INFO: [Physopt 32-735] Processed net pwm[3]/pwm_o_i_8_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-12.251 | TNS=-2751.324 |
+INFO: [Physopt 32-702] Processed net pwm[1]/dac_pwm_o_OBUF[0]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-663] Processed net pwm[1]/pwm_o_i_3_n_0.  Re-placed instance pwm[1]/pwm_o_i_3
+INFO: [Physopt 32-735] Processed net pwm[1]/pwm_o_i_3_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-12.251 | TNS=-2751.317 |
+INFO: [Physopt 32-662] Processed net pwm[1]/pwm_o_i_3_n_0.  Did not re-place instance pwm[1]/pwm_o_i_3
+INFO: [Physopt 32-702] Processed net pwm[1]/pwm_o_i_3_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net pwm[1]/p_1_in. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-663] Processed net pwm[1]/vcnt_r[4].  Re-placed instance pwm[1]/vcnt_r_reg[4]
+INFO: [Physopt 32-735] Processed net pwm[1]/vcnt_r[4]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-12.251 | TNS=-2751.317 |
+INFO: [Physopt 32-663] Processed net pwm[1]/v_r[4].  Re-placed instance pwm[1]/v_r_reg[4]
+INFO: [Physopt 32-735] Processed net pwm[1]/v_r[4]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-12.251 | TNS=-2751.309 |
+INFO: [Physopt 32-662] Processed net pwm[1]/pwm_o_i_5_n_0.  Did not re-place instance pwm[1]/pwm_o_i_5
+INFO: [Physopt 32-735] Processed net pwm[1]/pwm_o_i_5_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-12.251 | TNS=-2751.257 |
+INFO: [Physopt 32-702] Processed net pwm[1]/pwm_o_i_9_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-663] Processed net pwm[1]/v_r[0].  Re-placed instance pwm[1]/v_r_reg[0]
+INFO: [Physopt 32-735] Processed net pwm[1]/v_r[0]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-12.251 | TNS=-2751.229 |
+INFO: [Physopt 32-662] Processed net pwm[3]/pwm_o_i_3_n_0.  Did not re-place instance pwm[3]/pwm_o_i_3
+INFO: [Physopt 32-702] Processed net pwm[3]/pwm_o_i_3_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net pwm[3]/p_1_in. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net pwm[3]/vcnt_r[4].  Did not re-place instance pwm[3]/vcnt_r_reg[4]
+INFO: [Physopt 32-81] Processed net pwm[3]/vcnt_r[4]. Replicated 1 times.
+INFO: [Physopt 32-735] Processed net pwm[3]/vcnt_r[4]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-12.251 | TNS=-2751.217 |
+INFO: [Physopt 32-662] Processed net pwm[3]/vcnt_r[4].  Did not re-place instance pwm[3]/vcnt_r_reg[4]
+INFO: [Physopt 32-702] Processed net pwm[3]/vcnt_r[4]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net ps/system_i/xadc/inst/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/p_21_in. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net ps/system_i/processing_system7/inst/FCLK_CLK_unbuffered[3]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-571] Net ps/system_i/xadc/inst/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/GEN_BKEND_CE_REGISTERS[23].ce_out_i[23]_i_2_n_0 was not replicated.
+INFO: [Physopt 32-662] Processed net ps/system_i/xadc/inst/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/GEN_BKEND_CE_REGISTERS[23].ce_out_i[23]_i_2_n_0.  Did not re-place instance ps/system_i/xadc/inst/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/GEN_BKEND_CE_REGISTERS[23].ce_out_i[23]_i_2
+INFO: [Physopt 32-710] Processed net ps/system_i/xadc/inst/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/ce_expnd_i_21. Critical path length was reduced through logic transformation on cell ps/system_i/xadc/inst/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/GEN_BKEND_CE_REGISTERS[3].ce_out_i[3]_i_1_comp.
+INFO: [Physopt 32-735] Processed net ps/system_i/xadc/inst/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/GEN_BKEND_CE_REGISTERS[23].ce_out_i[23]_i_2_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-12.251 | TNS=-2751.167 |
+INFO: [Physopt 32-702] Processed net ps/system_i/xadc/inst/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/p_8_in. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-571] Net ps/system_i/xadc/inst/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/GEN_BKEND_CE_REGISTERS[23].ce_out_i[23]_i_2_n_0 was not replicated.
+INFO: [Physopt 32-662] Processed net ps/system_i/xadc/inst/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/GEN_BKEND_CE_REGISTERS[23].ce_out_i[23]_i_2_n_0.  Did not re-place instance ps/system_i/xadc/inst/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/GEN_BKEND_CE_REGISTERS[23].ce_out_i[23]_i_2
+INFO: [Physopt 32-710] Processed net ps/system_i/xadc/inst/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/ce_expnd_i_8. Critical path length was reduced through logic transformation on cell ps/system_i/xadc/inst/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/GEN_BKEND_CE_REGISTERS[16].ce_out_i[16]_i_1_comp.
+INFO: [Physopt 32-735] Processed net ps/system_i/xadc/inst/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/GEN_BKEND_CE_REGISTERS[23].ce_out_i[23]_i_2_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-12.251 | TNS=-2751.119 |
+INFO: [Physopt 32-702] Processed net ps/system_i/xadc/inst/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/p_23_in. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-571] Net ps/system_i/xadc/inst/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/GEN_BKEND_CE_REGISTERS[23].ce_out_i[23]_i_2_n_0 was not replicated.
+INFO: [Physopt 32-662] Processed net ps/system_i/xadc/inst/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/GEN_BKEND_CE_REGISTERS[23].ce_out_i[23]_i_2_n_0.  Did not re-place instance ps/system_i/xadc/inst/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/GEN_BKEND_CE_REGISTERS[23].ce_out_i[23]_i_2
+INFO: [Physopt 32-710] Processed net ps/system_i/xadc/inst/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/ce_expnd_i_23. Critical path length was reduced through logic transformation on cell ps/system_i/xadc/inst/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/GEN_BKEND_CE_REGISTERS[1].ce_out_i[1]_i_1_comp.
+INFO: [Physopt 32-735] Processed net ps/system_i/xadc/inst/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/GEN_BKEND_CE_REGISTERS[23].ce_out_i[23]_i_2_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-12.251 | TNS=-2751.072 |
+INFO: [Physopt 32-702] Processed net ps/system_i/xadc/inst/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/p_16_in. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-571] Net ps/system_i/xadc/inst/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/GEN_BKEND_CE_REGISTERS[23].ce_out_i[23]_i_2_n_0 was not replicated.
+INFO: [Physopt 32-662] Processed net ps/system_i/xadc/inst/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/GEN_BKEND_CE_REGISTERS[23].ce_out_i[23]_i_2_n_0.  Did not re-place instance ps/system_i/xadc/inst/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/GEN_BKEND_CE_REGISTERS[23].ce_out_i[23]_i_2
+INFO: [Physopt 32-710] Processed net ps/system_i/xadc/inst/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/ce_expnd_i_16. Critical path length was reduced through logic transformation on cell ps/system_i/xadc/inst/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/GEN_BKEND_CE_REGISTERS[8].ce_out_i[8]_i_1_comp.
+INFO: [Physopt 32-735] Processed net ps/system_i/xadc/inst/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/GEN_BKEND_CE_REGISTERS[23].ce_out_i[23]_i_2_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-12.251 | TNS=-2751.027 |
+INFO: [Physopt 32-702] Processed net lock/calib_out_2/calib_out_2_data[0]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net pll/pll_adc_clk. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net lock/calib_out_2/p_1_in[0]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net lock/calib_in_1/switch_op1_out_reg[0]_4[2].  Did not re-place instance lock/calib_in_1/mult_raw_i_14__0_comp
+INFO: [Physopt 32-702] Processed net lock/calib_in_1/switch_op1_out_reg[0]_4[2]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net lock/calib_in_1/switch_op1_out_reg[0]_0[1].  Did not re-place instance lock/calib_in_1/mult_raw_i_43
+INFO: [Physopt 32-702] Processed net lock/calib_in_1/switch_op1_out_reg[0]_0[1]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net lock/calib_in_1/mult_raw_i_111__0_n_0.  Did not re-place instance lock/calib_in_1/mult_raw_i_111__0
+INFO: [Physopt 32-702] Processed net lock/calib_in_1/mult_raw_i_111__0_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net lock/calib_in_1/op1_subtract_21[2].  Did not re-place instance lock/calib_in_1/mult_raw_i_200
+INFO: [Physopt 32-702] Processed net lock/calib_in_1/op1_subtract_21[2]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net lock/lia_inst_1/lia_clamp/switch_op1_in_1_reg[2]_6[1]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net lock/calib_in_1/mult_raw_i_370__0_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net lock/calib_in_1/op1_in_2[1].  Did not re-place instance lock/calib_in_1/mult_raw_i_119__0
+INFO: [Physopt 32-702] Processed net lock/calib_in_1/op1_in_2[1]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net lock/pid_inst_1/pid_clamp/switch_op1_in_2_reg[0]_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net lock/lia_inst_1/lia_clamp/switch_op1_in_2_reg[1]_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net lock/calib_in_1/switch_pid_in_reg[2]_0[1]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net lock/calib_in_1/d_mem_2_reg_i_47_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net lock/calib_in_1/pid_set_point[0].  Did not re-place instance lock/calib_in_1/d_mem_2_reg_i_43
+INFO: [Physopt 32-702] Processed net lock/calib_in_1/pid_set_point[0]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net lock/calib_in_1/d_mem_2_reg_i_111_n_0.  Did not re-place instance lock/calib_in_1/d_mem_2_reg_i_111
+INFO: [Physopt 32-702] Processed net lock/calib_in_1/d_mem_2_reg_i_111_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net lock/calib_in_1/in_subtract_12[0].  Did not re-place instance lock/calib_in_1/mult_raw_i_210
+INFO: [Physopt 32-702] Processed net lock/calib_in_1/in_subtract_12[0]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net lock/calib_in_1/calib_reg[13]_2[0]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net lock/calib_in_1/mult_raw_i_503_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net lock/calib_out_2/mult_raw_n_80. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-663] Processed net lock/calib_in_1/calib_reg[13]_1[5].  Re-placed instance lock/calib_in_1/calib_reg[5]
+INFO: [Physopt 32-735] Processed net lock/calib_in_1/calib_reg[13]_1[5]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-12.221 | TNS=-2747.193 |
+INFO: [Physopt 32-702] Processed net lock/calib_in_1/mult_i_272_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-663] Processed net lock/calib_in_1/calib_reg[13]_1[9].  Re-placed instance lock/calib_in_1/calib_reg[9]
+INFO: [Physopt 32-735] Processed net lock/calib_in_1/calib_reg[13]_1[9]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-12.190 | TNS=-2743.009 |
+INFO: [Physopt 32-662] Processed net lock/calib_in_1/calib_reg[13]_1[5].  Did not re-place instance lock/calib_in_1/calib_reg[5]
+INFO: [Physopt 32-702] Processed net lock/calib_in_1/calib_reg[13]_1[5]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net pll/pll_pwm_clk. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net pwm[3]/pwm_o_i_3_n_0.  Did not re-place instance pwm[3]/pwm_o_i_3
+INFO: [Physopt 32-702] Processed net pwm[3]/pwm_o_i_3_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net pwm[3]/p_1_in. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net pwm[3]/vcnt_r[4].  Did not re-place instance pwm[3]/vcnt_r_reg[4]
+INFO: [Physopt 32-702] Processed net pwm[3]/vcnt_r[4]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-12.190 | TNS=-2743.009 |
+Phase 3 Critical Path Optimization | Checksum: 235a43427
+
+Time (s): cpu = 00:00:20 ; elapsed = 00:00:11 . Memory (MB): peak = 1715.430 ; gain = 0.000
+
+Phase 4 Critical Path Optimization
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-12.190 | TNS=-2743.009 |
+INFO: [Physopt 32-702] Processed net lock/calib_out_2/calib_out_2_data[0]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net pll/pll_adc_clk. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net lock/calib_out_2/p_1_in[0]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net lock/calib_in_1/switch_op1_out_reg[0]_4[2].  Did not re-place instance lock/calib_in_1/mult_raw_i_14__0_comp
+INFO: [Physopt 32-702] Processed net lock/calib_in_1/switch_op1_out_reg[0]_4[2]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net lock/calib_in_1/switch_op1_out_reg[0]_0[1].  Did not re-place instance lock/calib_in_1/mult_raw_i_43
+INFO: [Physopt 32-710] Processed net lock/calib_in_1/switch_op1_out_reg[0]_4[2]. Critical path length was reduced through logic transformation on cell lock/calib_in_1/mult_raw_i_14__0_comp_1.
+INFO: [Physopt 32-735] Processed net lock/calib_in_1/switch_op1_out_reg[0]_0[1]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-12.184 | TNS=-2742.925 |
+INFO: [Physopt 32-662] Processed net lock/lia_inst_1/lia_clamp/switch_op2_out_reg[0]_4[2].  Did not re-place instance lock/lia_inst_1/lia_clamp/mult_raw_i_10__1_comp
+INFO: [Physopt 32-702] Processed net lock/lia_inst_1/lia_clamp/switch_op2_out_reg[0]_4[2]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net lock/lia_inst_1/lia_clamp/op1_out[6].  Did not re-place instance lock/lia_inst_1/lia_clamp/mult_raw_i_51__0
+INFO: [Physopt 32-710] Processed net lock/lia_inst_1/lia_clamp/switch_op2_out_reg[0]_4[2]. Critical path length was reduced through logic transformation on cell lock/lia_inst_1/lia_clamp/mult_raw_i_10__1_comp_1.
+INFO: [Physopt 32-735] Processed net lock/lia_inst_1/lia_clamp/op1_out[6]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-12.184 | TNS=-2742.931 |
+INFO: [Physopt 32-662] Processed net lock/lia_inst_1/lia_clamp/switch_op2_out_reg[0]_4[0].  Did not re-place instance lock/lia_inst_1/lia_clamp/mult_raw_i_12__0
+INFO: [Physopt 32-702] Processed net lock/lia_inst_1/lia_clamp/switch_op2_out_reg[0]_4[0]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net lock/lia_inst_1/lia_clamp/op2_out[4].  Did not re-place instance lock/lia_inst_1/lia_clamp/mult_raw_i_59
+INFO: [Physopt 32-710] Processed net lock/lia_inst_1/lia_clamp/switch_op2_out_reg[0]_4[0]. Critical path length was reduced through logic transformation on cell lock/lia_inst_1/lia_clamp/mult_raw_i_12__0_comp.
+INFO: [Physopt 32-735] Processed net lock/lia_inst_1/lia_clamp/op2_out[4]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-12.179 | TNS=-2742.861 |
+INFO: [Physopt 32-662] Processed net lock/lia_inst_1/lia_clamp/switch_op2_out_reg[0]_4[7].  Did not re-place instance lock/lia_inst_1/lia_clamp/mult_raw_i_5__1
+INFO: [Physopt 32-702] Processed net lock/lia_inst_1/lia_clamp/switch_op2_out_reg[0]_4[7]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net lock/lia_inst_1/lia_clamp/op2_out[11].  Did not re-place instance lock/lia_inst_1/lia_clamp/mult_raw_i_30
+INFO: [Physopt 32-710] Processed net lock/lia_inst_1/lia_clamp/switch_op2_out_reg[0]_4[7]. Critical path length was reduced through logic transformation on cell lock/lia_inst_1/lia_clamp/mult_raw_i_5__1_comp.
+INFO: [Physopt 32-735] Processed net lock/lia_inst_1/lia_clamp/op2_out[11]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-12.175 | TNS=-2742.805 |
+INFO: [Physopt 32-662] Processed net lock/calib_in_1/switch_op1_out_reg[0]_4[1].  Did not re-place instance lock/calib_in_1/mult_raw_i_15__0
+INFO: [Physopt 32-702] Processed net lock/calib_in_1/switch_op1_out_reg[0]_4[1]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net lock/calib_in_1/switch_op1_out_reg[0]_0[0].  Did not re-place instance lock/calib_in_1/mult_raw_i_47
+INFO: [Physopt 32-710] Processed net lock/calib_in_1/switch_op1_out_reg[0]_4[1]. Critical path length was reduced through logic transformation on cell lock/calib_in_1/mult_raw_i_15__0_comp.
+INFO: [Physopt 32-735] Processed net lock/calib_in_1/switch_op1_out_reg[0]_0[0]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-12.169 | TNS=-2742.442 |
+INFO: [Physopt 32-702] Processed net lock/calib_out_1/calib_out_1_data[4]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net lock/calib_out_1/p_1_in[4]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net lock/lia_inst_1/lia_clamp/switch_op1_out_reg[0]_15[6].  Did not re-place instance lock/lia_inst_1/lia_clamp/mult_raw_i_6__0
+INFO: [Physopt 32-702] Processed net lock/lia_inst_1/lia_clamp/switch_op1_out_reg[0]_15[6]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net lock/lia_inst_1/lia_clamp/op2_out[10].  Did not re-place instance lock/lia_inst_1/lia_clamp/mult_raw_i_35
+INFO: [Physopt 32-710] Processed net lock/lia_inst_1/lia_clamp/switch_op1_out_reg[0]_15[6]. Critical path length was reduced through logic transformation on cell lock/lia_inst_1/lia_clamp/mult_raw_i_6__0_comp.
+INFO: [Physopt 32-735] Processed net lock/lia_inst_1/lia_clamp/op2_out[10]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-12.163 | TNS=-2742.364 |
+INFO: [Physopt 32-662] Processed net lock/lia_inst_1/lia_clamp/switch_op1_out_reg[0]_15[3].  Did not re-place instance lock/lia_inst_1/lia_clamp/mult_raw_i_9__0
+INFO: [Physopt 32-702] Processed net lock/lia_inst_1/lia_clamp/switch_op1_out_reg[0]_15[3]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net lock/lia_inst_1/lia_clamp/op1_out[7].  Did not re-place instance lock/lia_inst_1/lia_clamp/mult_raw_i_47__0
+INFO: [Physopt 32-710] Processed net lock/lia_inst_1/lia_clamp/switch_op1_out_reg[0]_15[3]. Critical path length was reduced through logic transformation on cell lock/lia_inst_1/lia_clamp/mult_raw_i_9__0_comp.
+INFO: [Physopt 32-735] Processed net lock/lia_inst_1/lia_clamp/op1_out[7]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-12.156 | TNS=-2742.266 |
+INFO: [Physopt 32-662] Processed net lock/calib_in_1/lin_raw_1[0].  Did not re-place instance lock/calib_in_1/mult_raw_i_16_comp
+INFO: [Physopt 32-702] Processed net lock/calib_in_1/lin_raw_1[0]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net lock/calib_in_1/calib_reg[0]_1.  Did not re-place instance lock/calib_in_1/mult_raw_i_77
+INFO: [Physopt 32-710] Processed net lock/calib_in_1/lin_raw_1[0]. Critical path length was reduced through logic transformation on cell lock/calib_in_1/mult_raw_i_16_comp_1.
+INFO: [Physopt 32-735] Processed net lock/calib_in_1/calib_reg[0]_1. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-12.152 | TNS=-2742.794 |
+INFO: [Physopt 32-662] Processed net lock/lia_inst_1/lia_clamp/switch_op1_out_reg[0]_15[2].  Did not re-place instance lock/lia_inst_1/lia_clamp/mult_raw_i_10__0_comp
+INFO: [Physopt 32-702] Processed net lock/lia_inst_1/lia_clamp/switch_op1_out_reg[0]_15[2]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net lock/lia_inst_1/lia_clamp/op1_out[6].  Did not re-place instance lock/lia_inst_1/lia_clamp/mult_raw_i_51__0
+INFO: [Physopt 32-710] Processed net lock/lia_inst_1/lia_clamp/switch_op1_out_reg[0]_15[2]. Critical path length was reduced through logic transformation on cell lock/lia_inst_1/lia_clamp/mult_raw_i_10__0_comp_1.
+INFO: [Physopt 32-735] Processed net lock/lia_inst_1/lia_clamp/op1_out[6]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-12.150 | TNS=-2742.728 |
+INFO: [Physopt 32-662] Processed net lock/lia_inst_1/lia_clamp/switch_op2_out_reg[0]_4[1].  Did not re-place instance lock/lia_inst_1/lia_clamp/mult_raw_i_11__0_comp
+INFO: [Physopt 32-702] Processed net lock/lia_inst_1/lia_clamp/switch_op2_out_reg[0]_4[1]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net lock/lia_inst_1/lia_clamp/op1_out[5].  Did not re-place instance lock/lia_inst_1/lia_clamp/mult_raw_i_54
+INFO: [Physopt 32-710] Processed net lock/lia_inst_1/lia_clamp/switch_op2_out_reg[0]_4[1]. Critical path length was reduced through logic transformation on cell lock/lia_inst_1/lia_clamp/mult_raw_i_11__0_comp_1.
+INFO: [Physopt 32-735] Processed net lock/lia_inst_1/lia_clamp/op1_out[5]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-12.149 | TNS=-2742.718 |
+INFO: [Physopt 32-662] Processed net lock/lia_inst_1/lia_clamp/switch_op1_out_reg[0]_1.  Did not re-place instance lock/lia_inst_1/lia_clamp/mult_raw_i_58
+INFO: [Physopt 32-710] Processed net lock/lia_inst_1/lia_clamp/switch_op2_out_reg[0]_4[0]. Critical path length was reduced through logic transformation on cell lock/lia_inst_1/lia_clamp/mult_raw_i_12__0_comp_1.
+INFO: [Physopt 32-735] Processed net lock/lia_inst_1/lia_clamp/switch_op1_out_reg[0]_1. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-12.147 | TNS=-2742.648 |
+INFO: [Physopt 32-662] Processed net lock/lia_inst_1/lia_clamp/switch_op1_out_reg[0]_15[0].  Did not re-place instance lock/lia_inst_1/lia_clamp/mult_raw_i_12_comp
+INFO: [Physopt 32-702] Processed net lock/lia_inst_1/lia_clamp/switch_op1_out_reg[0]_15[0]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net lock/lia_inst_1/lia_clamp/op2_out[4].  Did not re-place instance lock/lia_inst_1/lia_clamp/mult_raw_i_59
+INFO: [Physopt 32-710] Processed net lock/lia_inst_1/lia_clamp/switch_op1_out_reg[0]_15[0]. Critical path length was reduced through logic transformation on cell lock/lia_inst_1/lia_clamp/mult_raw_i_12_comp_1.
+INFO: [Physopt 32-735] Processed net lock/lia_inst_1/lia_clamp/op2_out[4]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-12.144 | TNS=-2742.522 |
+INFO: [Physopt 32-662] Processed net lock/lia_inst_1/lia_clamp/op1_out[11].  Did not re-place instance lock/lia_inst_1/lia_clamp/mult_raw_i_31
+INFO: [Physopt 32-710] Processed net lock/lia_inst_1/lia_clamp/switch_op2_out_reg[0]_4[7]. Critical path length was reduced through logic transformation on cell lock/lia_inst_1/lia_clamp/mult_raw_i_5__1_comp_1.
+INFO: [Physopt 32-735] Processed net lock/lia_inst_1/lia_clamp/op1_out[11]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-12.142 | TNS=-2742.500 |
+INFO: [Physopt 32-662] Processed net lock/calib_in_1/switch_op1_out_reg[0]_4[0].  Did not re-place instance lock/calib_in_1/mult_raw_i_16__0
+INFO: [Physopt 32-702] Processed net lock/calib_in_1/switch_op1_out_reg[0]_4[0]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net lock/calib_in_1/op1_out[0].  Did not re-place instance lock/calib_in_1/mult_raw_i_51
+INFO: [Physopt 32-710] Processed net lock/calib_in_1/switch_op1_out_reg[0]_4[0]. Critical path length was reduced through logic transformation on cell lock/calib_in_1/mult_raw_i_16__0_comp.
+INFO: [Physopt 32-735] Processed net lock/calib_in_1/op1_out[0]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-12.138 | TNS=-2742.115 |
+INFO: [Physopt 32-662] Processed net lock/lia_inst_1/lia_clamp/switch_op1_out_reg[0]_15[4].  Did not re-place instance lock/lia_inst_1/lia_clamp/mult_raw_i_8__0
+INFO: [Physopt 32-702] Processed net lock/lia_inst_1/lia_clamp/switch_op1_out_reg[0]_15[4]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net lock/lia_inst_1/lia_clamp/op2_out[8].  Did not re-place instance lock/lia_inst_1/lia_clamp/mult_raw_i_43__0
+INFO: [Physopt 32-710] Processed net lock/lia_inst_1/lia_clamp/switch_op1_out_reg[0]_15[4]. Critical path length was reduced through logic transformation on cell lock/lia_inst_1/lia_clamp/mult_raw_i_8__0_comp.
+INFO: [Physopt 32-735] Processed net lock/lia_inst_1/lia_clamp/op2_out[8]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-12.128 | TNS=-2741.979 |
+INFO: [Physopt 32-662] Processed net lock/calib_in_1/lin_raw_1[3].  Did not re-place instance lock/calib_in_1/mult_raw_i_13_comp_1
+INFO: [Physopt 32-702] Processed net lock/calib_in_1/lin_raw_1[3]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net lock/calib_in_1/switch_op1_out_reg[0]_0[2].  Did not re-place instance lock/calib_in_1/mult_raw_i_39
+INFO: [Physopt 32-710] Processed net lock/calib_in_1/lin_raw_1[3]. Critical path length was reduced through logic transformation on cell lock/calib_in_1/mult_raw_i_13_comp.
+INFO: [Physopt 32-735] Processed net lock/calib_in_1/switch_op1_out_reg[0]_0[2]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-12.114 | TNS=-2741.490 |
+INFO: [Physopt 32-662] Processed net lock/lia_inst_1/lia_clamp/switch_op2_out_reg[0]_4[4].  Did not re-place instance lock/lia_inst_1/lia_clamp/mult_raw_i_8__1_comp
+INFO: [Physopt 32-702] Processed net lock/lia_inst_1/lia_clamp/switch_op2_out_reg[0]_4[4]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net lock/lia_inst_1/lia_clamp/op1_out[8].  Did not re-place instance lock/lia_inst_1/lia_clamp/mult_raw_i_42
+INFO: [Physopt 32-710] Processed net lock/lia_inst_1/lia_clamp/switch_op2_out_reg[0]_4[4]. Critical path length was reduced through logic transformation on cell lock/lia_inst_1/lia_clamp/mult_raw_i_8__1_comp_1.
+INFO: [Physopt 32-735] Processed net lock/lia_inst_1/lia_clamp/op1_out[8]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-12.106 | TNS=-2741.378 |
+INFO: [Common 17-14] Message 'Physopt 32-619' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Physopt 32-662] Processed net lock/lia_inst_1/lia_clamp/switch_op2_out_reg[0]_4[3].  Did not re-place instance lock/lia_inst_1/lia_clamp/mult_raw_i_9__1_comp
+INFO: [Physopt 32-702] Processed net lock/lia_inst_1/lia_clamp/switch_op2_out_reg[0]_4[3]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net lock/lia_inst_1/lia_clamp/op1_out[7].  Did not re-place instance lock/lia_inst_1/lia_clamp/mult_raw_i_47__0
+INFO: [Physopt 32-710] Processed net lock/lia_inst_1/lia_clamp/switch_op2_out_reg[0]_4[3]. Critical path length was reduced through logic transformation on cell lock/lia_inst_1/lia_clamp/mult_raw_i_9__1_comp_1.
+INFO: [Physopt 32-735] Processed net lock/lia_inst_1/lia_clamp/op1_out[7]. Optimization improves timing on the net.
+INFO: [Physopt 32-662] Processed net lock/calib_in_1/mult_raw_i_114_n_0.  Did not re-place instance lock/calib_in_1/mult_raw_i_114
+INFO: [Physopt 32-572] Net lock/calib_in_1/mult_raw_i_114_n_0 was not replicated.
+Resolution: phys_opt_design can be forced to replicate a net driver using the option -force_replication_on_nets <list of net objects>.
+INFO: [Physopt 32-702] Processed net lock/calib_in_1/mult_raw_i_114_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net lock/calib_in_1/op2_subtract_21[2].  Did not re-place instance lock/calib_in_1/mult_raw_i_211
+INFO: [Physopt 32-702] Processed net lock/calib_in_1/op2_subtract_21[2]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net lock/lia_inst_1/lia_clamp/switch_op2_in_1_reg[2]_6[1]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net lock/lia_inst_1/lia_clamp/mult_raw_i_485_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net lock/lia_inst_1/lia_clamp/mult_raw_i_495_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net lock/lia_inst_1/lia_clamp/mult_raw_i_543_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net lock/lia_inst_1/lia_clamp/op2_in_1[5].  Did not re-place instance lock/lia_inst_1/lia_clamp/mult_raw_i_172__0
+INFO: [Physopt 32-710] Processed net lock/lia_inst_1/lia_clamp/mult_raw_i_543_n_0. Critical path length was reduced through logic transformation on cell lock/lia_inst_1/lia_clamp/mult_raw_i_543_comp.
+INFO: [Physopt 32-735] Processed net lock/lia_inst_1/lia_clamp/op2_in_1[5]. Optimization improves timing on the net.
+INFO: [Physopt 32-702] Processed net lock/calib_in_1/switch_op2_in_2_reg[2][0]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net lock/calib_in_1/mult_raw_i_383__0_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net lock/calib_in_1/op2_in_2[0].  Did not re-place instance lock/calib_in_1/mult_raw_i_132__0
+INFO: [Physopt 32-710] Processed net lock/calib_in_1/mult_raw_i_383__0_n_0. Critical path length was reduced through logic transformation on cell lock/calib_in_1/mult_raw_i_383__0_comp.
+INFO: [Physopt 32-735] Processed net lock/calib_in_1/op2_in_2[0]. Optimization improves timing on the net.
+INFO: [Physopt 32-735] Processed net lock/calib_in_1/mult_raw_i_382__0_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-662] Processed net lock/lia_inst_1/lia_clamp/op2_out[7].  Did not re-place instance lock/lia_inst_1/lia_clamp/mult_raw_i_46
+INFO: [Physopt 32-710] Processed net lock/lia_inst_1/lia_clamp/switch_op1_out_reg[0]_15[3]. Critical path length was reduced through logic transformation on cell lock/lia_inst_1/lia_clamp/mult_raw_i_9__0_comp_1.
+INFO: [Physopt 32-735] Processed net lock/lia_inst_1/lia_clamp/op2_out[7]. Optimization improves timing on the net.
+INFO: [Common 17-14] Message 'Physopt 32-735' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Physopt 32-702] Processed net lock/lia_inst_1/lia_clamp/mult_raw_i_530_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net lock/lia_inst_1/lia_clamp/switch_op2_in_2_reg[2]_0[2].  Did not re-place instance lock/lia_inst_1/lia_clamp/mult_raw_i_121
+INFO: [Physopt 32-710] Processed net lock/lia_inst_1/lia_clamp/mult_raw_i_530_n_0. Critical path length was reduced through logic transformation on cell lock/lia_inst_1/lia_clamp/mult_raw_i_530_comp.
+INFO: [Physopt 32-702] Processed net lock/lia_inst_1/lia_clamp/mult_raw_i_531_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net lock/lia_inst_1/lia_clamp/op2_in_1[9].  Did not re-place instance lock/lia_inst_1/lia_clamp/mult_raw_i_132
+INFO: [Physopt 32-710] Processed net lock/lia_inst_1/lia_clamp/mult_raw_i_531_n_0. Critical path length was reduced through logic transformation on cell lock/lia_inst_1/lia_clamp/mult_raw_i_531_comp.
+INFO: [Physopt 32-662] Processed net lock/calib_in_1/op2_out[3].  Did not re-place instance lock/calib_in_1/mult_raw_i_40
+INFO: [Physopt 32-710] Processed net lock/calib_in_1/lin_raw_1[3]. Critical path length was reduced through logic transformation on cell lock/calib_in_1/mult_raw_i_13_comp_2.
+INFO: [Physopt 32-662] Processed net lock/lia_inst_1/lia_clamp/op1_out[10].  Did not re-place instance lock/lia_inst_1/lia_clamp/mult_raw_i_34
+INFO: [Physopt 32-710] Processed net lock/lia_inst_1/lia_clamp/switch_op1_out_reg[0]_15[6]. Critical path length was reduced through logic transformation on cell lock/lia_inst_1/lia_clamp/mult_raw_i_6__0_comp_1.
+INFO: [Physopt 32-662] Processed net lock/calib_in_1/op2_out[1].  Did not re-place instance lock/calib_in_1/mult_raw_i_48
+INFO: [Physopt 32-710] Processed net lock/calib_in_1/switch_op1_out_reg[0]_4[1]. Critical path length was reduced through logic transformation on cell lock/calib_in_1/mult_raw_i_15__0_comp_1.
+INFO: [Physopt 32-662] Processed net lock/calib_in_1/switch_op1_out_reg[0]_4[3].  Did not re-place instance lock/calib_in_1/mult_raw_i_13__0_comp_1
+INFO: [Physopt 32-702] Processed net lock/calib_in_1/switch_op1_out_reg[0]_4[3]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net lock/calib_in_1/mult_raw_i_101__0_n_0.  Did not re-place instance lock/calib_in_1/mult_raw_i_101__0
+INFO: [Physopt 32-572] Net lock/calib_in_1/mult_raw_i_101__0_n_0 was not replicated.
+Resolution: phys_opt_design can be forced to replicate a net driver using the option -force_replication_on_nets <list of net objects>.
+INFO: [Physopt 32-702] Processed net lock/calib_in_1/mult_raw_i_101__0_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net lock/calib_in_1/op1_subtract_21[3].  Did not re-place instance lock/calib_in_1/mult_raw_i_176
+INFO: [Physopt 32-702] Processed net lock/calib_in_1/op1_subtract_21[3]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net lock/lia_inst_1/lia_clamp/switch_op1_in_1_reg[2]_5[0]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net lock/lia_inst_1/lia_clamp/mult_raw_i_476_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net lock/lia_inst_1/lia_clamp/mult_raw_i_498_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net lock/calib_in_1/switch_op1_in_2_reg[2][0]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net lock/calib_in_1/mult_raw_i_370__0_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net lock/calib_in_1/op1_in_2[1].  Did not re-place instance lock/calib_in_1/mult_raw_i_119__0
+INFO: [Physopt 32-710] Processed net lock/calib_in_1/mult_raw_i_370__0_n_0. Critical path length was reduced through logic transformation on cell lock/calib_in_1/mult_raw_i_370__0_comp.
+INFO: [Physopt 32-662] Processed net lock/calib_in_1/op2_sum[2].  Did not re-place instance lock/calib_in_1/mult_raw_i_212
+INFO: [Physopt 32-702] Processed net lock/calib_in_1/op2_sum[2]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net lock/lia_inst_1/lia_clamp/switch_op2_in_1_reg[2]_2[1]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net lock/lia_inst_1/lia_clamp/mult_raw_i_491_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net lock/lia_inst_1/lia_clamp/mult_raw_i_496_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net lock/calib_in_1/switch_op2_in_1_reg[2]_1[0]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net lock/lia_inst_1/lia_clamp/mult_raw_i_547_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net lock/lia_inst_1/lia_clamp/op2_in_1[5].  Did not re-place instance lock/lia_inst_1/lia_clamp/mult_raw_i_172__0
+INFO: [Physopt 32-710] Processed net lock/lia_inst_1/lia_clamp/mult_raw_i_547_n_0. Critical path length was reduced through logic transformation on cell lock/lia_inst_1/lia_clamp/mult_raw_i_547_comp.
+INFO: [Physopt 32-662] Processed net lock/lia_inst_1/lia_clamp/op2_in_1[10].  Did not re-place instance lock/lia_inst_1/lia_clamp/mult_raw_i_122
+INFO: [Physopt 32-572] Net lock/lia_inst_1/lia_clamp/op2_in_1[10] was not replicated.
+Resolution: phys_opt_design can be forced to replicate a net driver using the option -force_replication_on_nets <list of net objects>.
+INFO: [Physopt 32-702] Processed net lock/lia_inst_1/lia_clamp/op2_in_1[10]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net lock/lia_inst_1/lia_clamp/data_clamped_reg[10]_4.  Did not re-place instance lock/lia_inst_1/lia_clamp/mult_raw_i_303__0
+INFO: [Physopt 32-572] Net lock/lia_inst_1/lia_clamp/data_clamped_reg[10]_4 was not replicated.
+Resolution: phys_opt_design can be forced to replicate a net driver using the option -force_replication_on_nets <list of net objects>.
+INFO: [Physopt 32-702] Processed net lock/lia_inst_1/lia_clamp/data_clamped_reg[10]_4. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net lock/calib_out_2/pid_error[5].  Did not re-place instance lock/calib_out_2/d_mem_2_reg_i_5
+INFO: [Physopt 32-81] Processed net lock/calib_out_2/pid_error[5]. Replicated 1 times.
+INFO: [Physopt 32-662] Processed net lock/lia_inst_1/lia_clamp/switch_op2_in_2_reg[2]_0[1].  Did not re-place instance lock/lia_inst_1/lia_clamp/mult_raw_i_131
+INFO: [Physopt 32-572] Net lock/lia_inst_1/lia_clamp/switch_op2_in_2_reg[2]_0[1] was not replicated.
+Resolution: phys_opt_design can be forced to replicate a net driver using the option -force_replication_on_nets <list of net objects>.
+INFO: [Physopt 32-702] Processed net lock/lia_inst_1/lia_clamp/switch_op2_in_2_reg[2]_0[1]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net lock/lia_inst_1/lia_clamp/mult_raw_i_323__0_n_0.  Did not re-place instance lock/lia_inst_1/lia_clamp/mult_raw_i_323__0
+INFO: [Physopt 32-702] Processed net lock/lia_inst_1/lia_clamp/mult_raw_i_323__0_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net lock/calib_out_2/pid_error[4].  Did not re-place instance lock/calib_out_2/d_mem_2_reg_i_6
+INFO: [Physopt 32-710] Processed net lock/lia_inst_1/lia_clamp/mult_raw_i_323__0_n_0. Critical path length was reduced through logic transformation on cell lock/lia_inst_1/lia_clamp/mult_raw_i_323__0_comp.
+INFO: [Physopt 32-662] Processed net lock/lia_inst_1/lia_clamp/switch_op2_out_reg[0]_4[6].  Did not re-place instance lock/lia_inst_1/lia_clamp/mult_raw_i_6__1
+INFO: [Physopt 32-702] Processed net lock/lia_inst_1/lia_clamp/switch_op2_out_reg[0]_4[6]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net lock/lia_inst_1/lia_clamp/op1_out[10].  Did not re-place instance lock/lia_inst_1/lia_clamp/mult_raw_i_34
+INFO: [Physopt 32-710] Processed net lock/lia_inst_1/lia_clamp/switch_op2_out_reg[0]_4[6]. Critical path length was reduced through logic transformation on cell lock/lia_inst_1/lia_clamp/mult_raw_i_6__1_comp.
+INFO: [Physopt 32-702] Processed net lock/lia_inst_1/lia_clamp/mult_raw_i_556_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net lock/calib_in_1/switch_op1_in_1_reg[2][0].  Did not re-place instance lock/calib_in_1/mult_raw_i_179
+INFO: [Physopt 32-710] Processed net lock/lia_inst_1/lia_clamp/mult_raw_i_556_n_0. Critical path length was reduced through logic transformation on cell lock/lia_inst_1/lia_clamp/mult_raw_i_556_comp.
+INFO: [Physopt 32-662] Processed net lock/calib_in_1/op2_in_1[0].  Did not re-place instance lock/calib_in_1/mult_raw_i_133
+INFO: [Physopt 32-572] Net lock/calib_in_1/op2_in_1[0] was not replicated.
+Resolution: phys_opt_design can be forced to replicate a net driver using the option -force_replication_on_nets <list of net objects>.
+INFO: [Physopt 32-702] Processed net lock/calib_in_1/op2_in_1[0]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net lock/pid_inst_1/pid_clamp/switch_op2_in_1_reg[0]_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net lock/lia_inst_1/lia_clamp/switch_op2_in_1_reg[1]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net lock/calib_in_1/switch_pid_in_reg[2][0]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net lock/calib_in_1/d_mem_2_reg_i_17_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net lock/calib_in_1/d_mem_2_reg_i_18_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net lock/calib_in_1/d_mem_2_reg_i_19_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net lock/calib_in_1/d_mem_2_reg_i_47_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net lock/calib_in_1/pid_set_point[0].  Did not re-place instance lock/calib_in_1/d_mem_2_reg_i_43
+INFO: [Physopt 32-710] Processed net lock/calib_in_1/d_mem_2_reg_i_47_n_0. Critical path length was reduced through logic transformation on cell lock/calib_in_1/d_mem_2_reg_i_47_comp.
+INFO: [Physopt 32-702] Processed net lock/calib_in_1/d_mem_2_reg_i_46_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net lock/calib_in_1/pid_set_point[1].  Did not re-place instance lock/calib_in_1/d_mem_2_reg_i_42
+INFO: [Physopt 32-710] Processed net lock/calib_in_1/d_mem_2_reg_i_46_n_0. Critical path length was reduced through logic transformation on cell lock/calib_in_1/d_mem_2_reg_i_46_comp.
+INFO: [Physopt 32-702] Processed net lock/calib_in_1/d_mem_2_reg_i_45_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net lock/calib_in_1/d_mem_2_reg_i_116_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net lock/calib_in_1/d_mem_2_reg_i_146_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net lock/calib_in_1/in_sum[2].  Did not re-place instance lock/calib_in_1/mult_i_246
+INFO: [Physopt 32-572] Net lock/calib_in_1/in_sum[2] was not replicated.
+Resolution: phys_opt_design can be forced to replicate a net driver using the option -force_replication_on_nets <list of net objects>.
+INFO: [Physopt 32-702] Processed net lock/calib_in_1/in_sum[2]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net lock/calib_in_1/CO[0]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net lock/calib_in_1/mult_i_218_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net lock/calib_in_1/mult_i_274_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net lock/calib_in_1/mult_i_287_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net lock/calib_out_2/mult_raw_n_80. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-81] Processed net lock/calib_in_1/calib_reg[13]_1[4]. Replicated 3 times.
+INFO: [Physopt 32-702] Processed net lock/calib_in_1/mult_raw_i_191_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net lock/calib_in_1/mult_raw_i_464_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-81] Processed net lock/calib_in_2/Q[0]. Replicated 2 times.
+INFO: [Physopt 32-662] Processed net lock/calib_in_1/pid_set_point[0].  Did not re-place instance lock/calib_in_1/d_mem_2_reg_i_43
+INFO: [Physopt 32-702] Processed net lock/calib_in_1/pid_set_point[0]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net lock/calib_in_1/d_mem_2_reg_i_111_n_0.  Did not re-place instance lock/calib_in_1/d_mem_2_reg_i_111
+INFO: [Physopt 32-572] Net lock/calib_in_1/d_mem_2_reg_i_111_n_0 was not replicated.
+Resolution: phys_opt_design can be forced to replicate a net driver using the option -force_replication_on_nets <list of net objects>.
+INFO: [Physopt 32-702] Processed net lock/calib_in_1/d_mem_2_reg_i_111_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net lock/calib_in_1/in_subtract_12[0].  Did not re-place instance lock/calib_in_1/mult_raw_i_210
+INFO: [Physopt 32-710] Processed net lock/calib_in_1/d_mem_2_reg_i_111_n_0. Critical path length was reduced through logic transformation on cell lock/calib_in_1/d_mem_2_reg_i_111_comp.
+INFO: [Physopt 32-572] Net lock/calib_in_1/calib_reg[13]_1[0] was not replicated.
+Resolution: phys_opt_design can be forced to replicate a net driver using the option -force_replication_on_nets <list of net objects>.
+INFO: [Physopt 32-662] Processed net lock/calib_in_1/calib_reg[13]_1[0].  Did not re-place instance lock/calib_in_1/calib_reg[0]
+INFO: [Physopt 32-702] Processed net lock/calib_in_1/calib_reg[13]_1[0]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net pwm[3]/dac_pwm_o_OBUF[0]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net pll/pll_pwm_clk. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net pwm[3]/pwm_o_i_3_n_0.  Did not re-place instance pwm[3]/pwm_o_i_3
+INFO: [Physopt 32-702] Processed net pwm[3]/pwm_o_i_3_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net pwm[3]/p_1_in. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net pwm[3]/vcnt_r[4].  Did not re-place instance pwm[3]/vcnt_r_reg[4]
+INFO: [Physopt 32-702] Processed net pwm[3]/vcnt_r[4]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net lock/calib_out_2/calib_out_2_data[0]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net pll/pll_adc_clk. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net lock/calib_out_2/p_1_in[0]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net lock/calib_in_1/switch_op1_out_reg[0]_4[2].  Did not re-place instance lock/calib_in_1/mult_raw_i_14__0_comp_1
+INFO: [Physopt 32-662] Processed net lock/lia_inst_1/lia_clamp/switch_op2_out_reg[0]_4[2].  Did not re-place instance lock/lia_inst_1/lia_clamp/mult_raw_i_10__1_comp_1
+INFO: [Physopt 32-662] Processed net lock/lia_inst_1/lia_clamp/switch_op2_out_reg[0]_4[4].  Did not re-place instance lock/lia_inst_1/lia_clamp/mult_raw_i_8__1_comp_1
+INFO: [Physopt 32-702] Processed net lock/calib_out_1/calib_out_1_data[4]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net lock/calib_out_1/p_1_in[4]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net lock/calib_in_1/lin_raw_1[1].  Did not re-place instance lock/calib_in_1/mult_raw_i_15_comp_1
+INFO: [Physopt 32-662] Processed net lock/lia_inst_1/lia_clamp/switch_op1_out_reg[0]_15[2].  Did not re-place instance lock/lia_inst_1/lia_clamp/mult_raw_i_10__0_comp_1
+INFO: [Physopt 32-702] Processed net lock/lia_inst_1/lia_clamp/switch_op1_out_reg[0]_15[2]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net lock/calib_out_2/switch_op2_out_reg[0]_2.  Did not re-place instance lock/calib_out_2/mult_raw_i_160
+INFO: [Physopt 32-702] Processed net lock/calib_out_2/switch_op2_out_reg[0]_2. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net lock/calib_out_2/op2_subtract_12[6].  Did not re-place instance lock/calib_out_2/mult_raw_i_395
+INFO: [Physopt 32-702] Processed net lock/calib_out_2/op2_subtract_12[6]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net lock/lia_inst_1/lia_clamp/switch_op2_in_2_reg[2]_4[1]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net lock/lia_inst_1/lia_clamp/switch_op1_out_reg[0]_15[7].  Did not re-place instance lock/lia_inst_1/lia_clamp/mult_raw_i_5__0
+INFO: [Physopt 32-702] Processed net lock/lia_inst_1/lia_clamp/switch_op1_out_reg[0]_15[7]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net lock/lia_inst_1/lia_clamp/op2_out[11].  Did not re-place instance lock/lia_inst_1/lia_clamp/mult_raw_i_30
+INFO: [Physopt 32-702] Processed net lock/lia_inst_1/lia_clamp/op2_out[11]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net lock/calib_out_2/switch_op2_out_reg[0]_7.  Did not re-place instance lock/calib_out_2/mult_raw_i_110__0
+INFO: [Physopt 32-662] Processed net lock/lia_inst_1/lia_clamp/switch_op1_out_reg[0]_15[1].  Did not re-place instance lock/lia_inst_1/lia_clamp/mult_raw_i_11_comp
+INFO: [Physopt 32-702] Processed net lock/lia_inst_1/lia_clamp/switch_op1_out_reg[0]_15[1]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net lock/lia_inst_1/lia_clamp/op2_out[5].  Did not re-place instance lock/lia_inst_1/lia_clamp/mult_raw_i_55
+INFO: [Physopt 32-702] Processed net lock/lia_inst_1/lia_clamp/op2_out[5]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net lock/calib_out_2/switch_op2_out_reg[0]_1.  Did not re-place instance lock/calib_out_2/mult_raw_i_173__0
+INFO: [Physopt 32-662] Processed net lock/lia_inst_1/lia_clamp/switch_op2_out_reg[0]_4[3].  Did not re-place instance lock/lia_inst_1/lia_clamp/mult_raw_i_9__1_comp_1
+INFO: [Physopt 32-702] Processed net lock/lia_inst_1/lia_clamp/switch_op2_out_reg[0]_4[3]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net lock/calib_out_2/switch_op2_out_reg[0]_3.  Did not re-place instance lock/calib_out_2/mult_raw_i_150
+INFO: [Physopt 32-662] Processed net lock/lia_inst_1/lia_clamp/switch_op2_out_reg[0]_4[4].  Did not re-place instance lock/lia_inst_1/lia_clamp/mult_raw_i_8__1_comp_1
+INFO: [Physopt 32-662] Processed net lock/calib_out_2/switch_op1_out_reg[3]_2.  Did not re-place instance lock/calib_out_2/mult_raw_i_163
+INFO: [Physopt 32-662] Processed net lock/lia_inst_1/lia_clamp/switch_op2_out_reg[0]_4[6].  Did not re-place instance lock/lia_inst_1/lia_clamp/mult_raw_i_6__1_comp
+INFO: [Physopt 32-662] Processed net lock/lia_inst_1/lia_clamp/switch_op1_out_reg[0]_15[4].  Did not re-place instance lock/lia_inst_1/lia_clamp/mult_raw_i_8__0_comp
+INFO: [Physopt 32-702] Processed net lock/lia_inst_1/lia_clamp/switch_op1_out_reg[0]_15[4]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net lock/lia_inst_1/lia_clamp/op1_out[8].  Did not re-place instance lock/lia_inst_1/lia_clamp/mult_raw_i_42
+INFO: [Physopt 32-702] Processed net lock/lia_inst_1/lia_clamp/op1_out[8]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net lock/calib_out_2/switch_op1_out_reg[3]_4.  Did not re-place instance lock/calib_out_2/mult_raw_i_140
+INFO: [Physopt 32-702] Processed net lock/calib_out_2/switch_op1_out_reg[3]_4. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net lock/calib_out_2/op1_sum[8].  Did not re-place instance lock/calib_out_2/mult_raw_i_345
+INFO: [Physopt 32-702] Processed net lock/calib_out_2/op1_sum[8]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net lock/lia_inst_1/lia_clamp/switch_op1_in_1_reg[2]_0[0]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net lock/calib_in_1/switch_op1_out_reg[0]_4[3].  Did not re-place instance lock/calib_in_1/mult_raw_i_13__0_comp_1
+INFO: [Physopt 32-702] Processed net lock/calib_in_1/switch_op1_out_reg[0]_4[3]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net lock/calib_in_1/mult_raw_i_101__0_n_0.  Did not re-place instance lock/calib_in_1/mult_raw_i_101__0
+INFO: [Physopt 32-702] Processed net lock/calib_in_1/mult_raw_i_101__0_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net lock/calib_in_1/op1_subtract_21[3].  Did not re-place instance lock/calib_in_1/mult_raw_i_176
+INFO: [Physopt 32-702] Processed net lock/calib_in_1/op1_subtract_21[3]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net lock/lia_inst_1/lia_clamp/switch_op1_in_1_reg[2]_5[0]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net lock/calib_out_2/switch_op2_out_reg[0]_1.  Did not re-place instance lock/calib_out_2/mult_raw_i_173__0
+INFO: [Physopt 32-702] Processed net lock/calib_out_2/switch_op2_out_reg[0]_1. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net lock/calib_out_2/op2_sum[5].  Did not re-place instance lock/calib_out_2/mult_raw_i_429
+INFO: [Physopt 32-702] Processed net lock/calib_out_2/op2_sum[5]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net lock/lia_inst_1/lia_clamp/switch_op2_in_1_reg[2][1]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net lock/lia_inst_1/lia_clamp/mult_raw_i_555_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net lock/lia_inst_1/lia_clamp/op1_in_1[5].  Did not re-place instance lock/lia_inst_1/lia_clamp/mult_raw_i_169
+INFO: [Physopt 32-702] Processed net lock/lia_inst_1/lia_clamp/op1_in_1[5]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net lock/lia_inst_1/lia_clamp/data_clamped_reg[5]_1.  Did not re-place instance lock/lia_inst_1/lia_clamp/mult_raw_i_413
+INFO: [Physopt 32-702] Processed net lock/lia_inst_1/lia_clamp/data_clamped_reg[5]_1. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net lock/calib_out_2/pid_error[0].  Did not re-place instance lock/calib_out_2/d_mem_2_reg_i_10
+INFO: [Physopt 32-702] Processed net lock/calib_out_2/pid_error[0]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net lock/calib_in_1/bus_pid_set_point_reg[7][1]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net lock/calib_in_1/d_mem_2_reg_i_45_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net lock/calib_in_1/d_mem_2_reg_i_116_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net lock/calib_in_1/d_mem_2_reg_i_146_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net lock/calib_in_1/in_sum[2].  Did not re-place instance lock/calib_in_1/mult_i_246
+INFO: [Physopt 32-702] Processed net lock/calib_in_1/in_sum[2]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net lock/calib_in_1/CO[0]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net lock/calib_in_1/mult_raw_i_464_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net lock/calib_out_2/mult_raw_n_80. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net lock/calib_in_1/calib_reg[13]_1[0].  Did not re-place instance lock/calib_in_1/calib_reg[0]
+INFO: [Physopt 32-702] Processed net lock/calib_in_1/calib_reg[13]_1[0]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net pll/pll_pwm_clk. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net pwm[3]/pwm_o_i_3_n_0.  Did not re-place instance pwm[3]/pwm_o_i_3
+INFO: [Physopt 32-702] Processed net pwm[3]/pwm_o_i_3_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net pwm[3]/p_1_in. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net pwm[3]/vcnt_r[4].  Did not re-place instance pwm[3]/vcnt_r_reg[4]
+INFO: [Physopt 32-702] Processed net pwm[3]/vcnt_r[4]. Optimizations did not improve timing on the net.
+Phase 4 Critical Path Optimization | Checksum: 235a43427
+
+Time (s): cpu = 00:00:47 ; elapsed = 00:00:28 . Memory (MB): peak = 1715.430 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.069 . Memory (MB): peak = 1715.430 ; gain = 0.000
+INFO: [Physopt 32-603] Post Physical Optimization Timing Summary | WNS=-11.770 | TNS=-2733.755 |
+
+Summary of Physical Synthesis Optimizations
+============================================
+
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------
+|  Optimization   |  WNS Gain (ns)  |  TNS Gain (ns)  |  Added Cells  |  Removed Cells  |  Optimized Cells/Nets  |  Dont Touch  |  Iterations  |  Elapsed   |
+-------------------------------------------------------------------------------------------------------------------------------------------------------------
+|  DSP Register   |          0.000  |          0.000  |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  Critical Path  |          0.937  |         28.248  |            7  |              0  |                   136  |           0  |           2  |  00:00:26  |
+|  Total          |          0.937  |         28.248  |            7  |              0  |                   136  |           0  |           3  |  00:00:26  |
+-------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 1715.430 ; gain = 0.000
+Ending Physical Synthesis Task | Checksum: 1dc9423d8
+
+Time (s): cpu = 00:00:47 ; elapsed = 00:00:28 . Memory (MB): peak = 1715.430 ; gain = 0.000
+INFO: [Common 17-83] Releasing license: Implementation
+831 Infos, 20 Warnings, 16 Critical Warnings and 0 Errors encountered.
+phys_opt_design completed successfully
+phys_opt_design: Time (s): cpu = 00:00:53 ; elapsed = 00:00:32 . Memory (MB): peak = 1715.430 ; gain = 0.000
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:03 ; elapsed = 00:00:01 . Memory (MB): peak = 1715.430 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/Users/travi/Desktop/FPGA_Research/Code/RedPitaya-master/fpga/prj/v0.94/project/redpitaya.runs/impl_1/red_pitaya_top_physopt.dcp' has been generated.
+Command: route_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7z010'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z010'
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+Running DRC as a precondition to command route_design
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+
+
+Starting Routing Task
+INFO: [Route 35-254] Multithreading enabled for route_design using a maximum of 2 CPUs
+Checksum: PlaceDB: 4e5afcce ConstDB: 0 ShapeSum: e2bcb40c RouteDB: 0
+
+Phase 1 Build RT Design
+Phase 1 Build RT Design | Checksum: 1b0ea1824
+
+Time (s): cpu = 00:00:30 ; elapsed = 00:00:14 . Memory (MB): peak = 1715.430 ; gain = 0.000
+Post Restoration Checksum: NetGraph: b2a0efaf NumContArr: fe492875 Constraints: 0 Timing: 0
+
+Phase 2 Router Initialization
+
+Phase 2.1 Create Timer
+Phase 2.1 Create Timer | Checksum: 1b0ea1824
+
+Time (s): cpu = 00:00:30 ; elapsed = 00:00:14 . Memory (MB): peak = 1715.430 ; gain = 0.000
+
+Phase 2.2 Fix Topology Constraints
+Phase 2.2 Fix Topology Constraints | Checksum: 1b0ea1824
+
+Time (s): cpu = 00:00:30 ; elapsed = 00:00:14 . Memory (MB): peak = 1715.430 ; gain = 0.000
+
+Phase 2.3 Pre Route Cleanup
+Phase 2.3 Pre Route Cleanup | Checksum: 1b0ea1824
+
+Time (s): cpu = 00:00:30 ; elapsed = 00:00:14 . Memory (MB): peak = 1715.430 ; gain = 0.000
+ Number of Nodes with overlaps = 0
+
+Phase 2.4 Update Timing
+Phase 2.4 Update Timing | Checksum: 119b68890
+
+Time (s): cpu = 00:00:37 ; elapsed = 00:00:19 . Memory (MB): peak = 1734.125 ; gain = 18.695
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-11.520| TNS=-2642.518| WHS=-0.707 | THS=-221.179|
+
+Phase 2 Router Initialization | Checksum: 1a3cf76e4
+
+Time (s): cpu = 00:00:41 ; elapsed = 00:00:21 . Memory (MB): peak = 1779.246 ; gain = 63.816
+
+Router Utilization Summary
+  Global Vertical Routing Utilization    = 0.00717905 %
+  Global Horizontal Routing Utilization  = 0.00229779 %
+  Routable Net Status*
+  *Does not include unroutable nets such as driverless and loadless.
+  Run report_route_status for detailed report.
+  Number of Failed Nets               = 12731
+    (Failed Nets is the sum of unrouted and partially routed nets)
+  Number of Unrouted Nets             = 12729
+  Number of Partially Routed Nets     = 2
+  Number of Node Overlaps             = 1
+
+
+Phase 3 Initial Routing
+Phase 3 Initial Routing | Checksum: 147e02fb5
+
+Time (s): cpu = 00:00:45 ; elapsed = 00:00:24 . Memory (MB): peak = 1779.246 ; gain = 63.816
+INFO: [Route 35-580] Design has 14 pins with tight setup and hold constraints.
+
+The top 5 pins with tight setup and hold constraints:
+
++--------------------------+--------------------------+----------------------------------------------------------------------------------------------------------+
+|       Launch Clock       |      Capture Clock       |                                                 Pin                                                      |
++--------------------------+--------------------------+----------------------------------------------------------------------------------------------------------+
+|              pll_adc_clk |              pll_adc_clk |                                                                           lock/pid_inst_1/i_mem_reg[39]/D|
+|              pll_adc_clk |              pll_adc_clk |                                                                           lock/pid_inst_1/i_mem_reg[43]/D|
+|              pll_adc_clk |              pll_adc_clk |                                                                           lock/pid_inst_1/i_mem_reg[45]/D|
+|              pll_adc_clk |              pll_adc_clk |                                                                           lock/pid_inst_1/i_mem_reg[41]/D|
+|              pll_adc_clk |              pll_adc_clk |                                                                           lock/pid_inst_1/i_mem_reg[50]/D|
++--------------------------+--------------------------+----------------------------------------------------------------------------------------------------------+
+
+File with complete list of pins: tight_setup_hold_pins.txt
+
+
+Phase 4 Rip-up And Reroute
+
+Phase 4.1 Global Iteration 0
+ Number of Nodes with overlaps = 2828
+ Number of Nodes with overlaps = 822
+ Number of Nodes with overlaps = 227
+ Number of Nodes with overlaps = 77
+ Number of Nodes with overlaps = 10
+ Number of Nodes with overlaps = 3
+ Number of Nodes with overlaps = 2
+ Number of Nodes with overlaps = 0
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-13.290| TNS=-12713.864| WHS=N/A    | THS=N/A    |
+
+Phase 4.1 Global Iteration 0 | Checksum: 7ddaa11b
+
+Time (s): cpu = 00:01:10 ; elapsed = 00:00:39 . Memory (MB): peak = 1779.246 ; gain = 63.816
+
+Phase 4.2 Global Iteration 1
+ Number of Nodes with overlaps = 758
+ Number of Nodes with overlaps = 271
+ Number of Nodes with overlaps = 64
+ Number of Nodes with overlaps = 7
+ Number of Nodes with overlaps = 4
+ Number of Nodes with overlaps = 1
+ Number of Nodes with overlaps = 1
+ Number of Nodes with overlaps = 0
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-13.298| TNS=-12745.362| WHS=N/A    | THS=N/A    |
+
+Phase 4.2 Global Iteration 1 | Checksum: 1c6fa9f11
+
+Time (s): cpu = 00:01:19 ; elapsed = 00:00:46 . Memory (MB): peak = 1779.246 ; gain = 63.816
+Phase 4 Rip-up And Reroute | Checksum: 1c6fa9f11
+
+Time (s): cpu = 00:01:19 ; elapsed = 00:00:46 . Memory (MB): peak = 1779.246 ; gain = 63.816
+
+Phase 5 Delay and Skew Optimization
+
+Phase 5.1 Delay CleanUp
+
+Phase 5.1.1 Update Timing
+Phase 5.1.1 Update Timing | Checksum: 1c79c000f
+
+Time (s): cpu = 00:01:20 ; elapsed = 00:00:47 . Memory (MB): peak = 1779.246 ; gain = 63.816
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-13.175| TNS=-12400.477| WHS=N/A    | THS=N/A    |
+
+ Number of Nodes with overlaps = 0
+Phase 5.1 Delay CleanUp | Checksum: 21099afd7
+
+Time (s): cpu = 00:01:22 ; elapsed = 00:00:48 . Memory (MB): peak = 1779.246 ; gain = 63.816
+
+Phase 5.2 Clock Skew Optimization
+Phase 5.2 Clock Skew Optimization | Checksum: 21099afd7
+
+Time (s): cpu = 00:01:22 ; elapsed = 00:00:48 . Memory (MB): peak = 1779.246 ; gain = 63.816
+Phase 5 Delay and Skew Optimization | Checksum: 21099afd7
+
+Time (s): cpu = 00:01:22 ; elapsed = 00:00:48 . Memory (MB): peak = 1779.246 ; gain = 63.816
+
+Phase 6 Post Hold Fix
+
+Phase 6.1 Hold Fix Iter
+
+Phase 6.1.1 Update Timing
+Phase 6.1.1 Update Timing | Checksum: 13a647db9
+
+Time (s): cpu = 00:01:23 ; elapsed = 00:00:49 . Memory (MB): peak = 1779.246 ; gain = 63.816
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-13.098| TNS=-12072.746| WHS=-2.162 | THS=-58.814|
+
+Phase 6.1 Hold Fix Iter | Checksum: 1ad2c1ace
+
+Time (s): cpu = 00:01:23 ; elapsed = 00:00:49 . Memory (MB): peak = 1779.246 ; gain = 63.816
+Phase 6 Post Hold Fix | Checksum: 1b5c394b1
+
+Time (s): cpu = 00:01:23 ; elapsed = 00:00:49 . Memory (MB): peak = 1779.246 ; gain = 63.816
+
+Phase 7 Route finalize
+
+Router Utilization Summary
+  Global Vertical Routing Utilization    = 10.2383 %
+  Global Horizontal Routing Utilization  = 13.0526 %
+  Routable Net Status*
+  *Does not include unroutable nets such as driverless and loadless.
+  Run report_route_status for detailed report.
+  Number of Failed Nets               = 0
+    (Failed Nets is the sum of unrouted and partially routed nets)
+  Number of Unrouted Nets             = 0
+  Number of Partially Routed Nets     = 0
+  Number of Node Overlaps             = 0
+
+Congestion Report
+North Dir 1x1 Area, Max Cong = 68.4685%, No Congested Regions.
+South Dir 1x1 Area, Max Cong = 75.6757%, No Congested Regions.
+East Dir 1x1 Area, Max Cong = 86.7647%, Congestion bounded by tiles (Lower Left Tile -> Upper Right Tile):
+   INT_R_X15Y37 -> INT_R_X15Y37
+West Dir 1x1 Area, Max Cong = 83.8235%, No Congested Regions.
+
+------------------------------
+Reporting congestion hotspots
+------------------------------
+Direction: North
+----------------
+Congested clusters found at Level 0
+Effective congestion level: 0 Aspect Ratio: 1 Sparse Ratio: 0
+Direction: South
+----------------
+Congested clusters found at Level 0
+Effective congestion level: 0 Aspect Ratio: 1 Sparse Ratio: 0
+Direction: East
+----------------
+Congested clusters found at Level 0
+Effective congestion level: 0 Aspect Ratio: 1 Sparse Ratio: 1
+Direction: West
+----------------
+Congested clusters found at Level 0
+Effective congestion level: 0 Aspect Ratio: 1 Sparse Ratio: 0
+
+Phase 7 Route finalize | Checksum: 138c1ae53
+
+Time (s): cpu = 00:01:24 ; elapsed = 00:00:49 . Memory (MB): peak = 1779.246 ; gain = 63.816
+
+Phase 8 Verifying routed nets
+
+ Verification completed successfully
+Phase 8 Verifying routed nets | Checksum: 138c1ae53
+
+Time (s): cpu = 00:01:24 ; elapsed = 00:00:49 . Memory (MB): peak = 1779.246 ; gain = 63.816
+
+Phase 9 Depositing Routes
+Phase 9 Depositing Routes | Checksum: 1fe93c129
+
+Time (s): cpu = 00:01:25 ; elapsed = 00:00:51 . Memory (MB): peak = 1779.246 ; gain = 63.816
+
+Phase 10 Post Router Timing
+
+Phase 10.1 Update Timing
+Phase 10.1 Update Timing | Checksum: 21cc73cc0
+
+Time (s): cpu = 00:01:27 ; elapsed = 00:00:52 . Memory (MB): peak = 1779.246 ; gain = 63.816
+INFO: [Route 35-57] Estimated Timing Summary | WNS=-13.098| TNS=-12072.746| WHS=-2.162 | THS=-58.814|
+
+WARNING: [Route 35-328] Router estimated timing not met.
+Resolution: For a complete and accurate timing signoff, report_timing_summary must be run after route_design. Alternatively, route_design can be run with the -timing_summary option to enable a complete timing signoff at the end of route_design.
+Phase 10 Post Router Timing | Checksum: 21cc73cc0
+
+Time (s): cpu = 00:01:27 ; elapsed = 00:00:52 . Memory (MB): peak = 1779.246 ; gain = 63.816
+INFO: [Route 35-16] Router Completed Successfully
+
+Time (s): cpu = 00:01:27 ; elapsed = 00:00:52 . Memory (MB): peak = 1779.246 ; gain = 63.816
+
+Routing Is Done.
+INFO: [Common 17-83] Releasing license: Implementation
+850 Infos, 21 Warnings, 16 Critical Warnings and 0 Errors encountered.
+route_design completed successfully
+route_design: Time (s): cpu = 00:01:31 ; elapsed = 00:00:54 . Memory (MB): peak = 1779.246 ; gain = 63.816
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:04 ; elapsed = 00:00:02 . Memory (MB): peak = 1779.246 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/Users/travi/Desktop/FPGA_Research/Code/RedPitaya-master/fpga/prj/v0.94/project/redpitaya.runs/impl_1/red_pitaya_top_routed.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_drc -file red_pitaya_top_drc_routed.rpt -pb red_pitaya_top_drc_routed.pb -rpx red_pitaya_top_drc_routed.rpx
+Command: report_drc -file red_pitaya_top_drc_routed.rpt -pb red_pitaya_top_drc_routed.pb -rpx red_pitaya_top_drc_routed.rpx
+INFO: [IP_Flow 19-1839] IP Catalog is up to date.
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Coretcl 2-168] The results of DRC are in file C:/Users/travi/Desktop/FPGA_Research/Code/RedPitaya-master/fpga/prj/v0.94/project/redpitaya.runs/impl_1/red_pitaya_top_drc_routed.rpt.
+report_drc completed successfully
+INFO: [runtcl-4] Executing : report_methodology -file red_pitaya_top_methodology_drc_routed.rpt -pb red_pitaya_top_methodology_drc_routed.pb -rpx red_pitaya_top_methodology_drc_routed.rpx
+Command: report_methodology -file red_pitaya_top_methodology_drc_routed.rpt -pb red_pitaya_top_methodology_drc_routed.pb -rpx red_pitaya_top_methodology_drc_routed.rpx
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [DRC 23-133] Running Methodology with 2 threads
+INFO: [Coretcl 2-1520] The results of Report Methodology are in file C:/Users/travi/Desktop/FPGA_Research/Code/RedPitaya-master/fpga/prj/v0.94/project/redpitaya.runs/impl_1/red_pitaya_top_methodology_drc_routed.rpt.
+report_methodology completed successfully
+report_methodology: Time (s): cpu = 00:00:13 ; elapsed = 00:00:07 . Memory (MB): peak = 1824.672 ; gain = 29.797
+INFO: [runtcl-4] Executing : report_power -file red_pitaya_top_power_routed.rpt -pb red_pitaya_top_power_summary_routed.pb -rpx red_pitaya_top_power_routed.rpx
+Command: report_power -file red_pitaya_top_power_routed.rpt -pb red_pitaya_top_power_summary_routed.pb -rpx red_pitaya_top_power_routed.rpx
+INFO: [Power 33-23] Power model is not available for i_DNA
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Running Vector-less Activity Propagation...
+
+Finished Running Vector-less Activity Propagation
+WARNING: [Power 33-332] Found switching activity that implies high-fanout reset nets being asserted for excessive periods of time which may result in inaccurate power analysis.
+Resolution: To review and fix problems, please run Power Constraints Advisor in the GUI from Tools > Power Constraints Advisor or run report_power with the -advisory option to generate a text report.
+863 Infos, 22 Warnings, 16 Critical Warnings and 0 Errors encountered.
+report_power completed successfully
+report_power: Time (s): cpu = 00:00:08 ; elapsed = 00:00:05 . Memory (MB): peak = 1833.766 ; gain = 9.094
+INFO: [runtcl-4] Executing : report_route_status -file red_pitaya_top_route_status.rpt -pb red_pitaya_top_route_status.pb
+INFO: [runtcl-4] Executing : report_timing_summary -max_paths 10 -file red_pitaya_top_timing_summary_routed.rpt -pb red_pitaya_top_timing_summary_routed.pb -rpx red_pitaya_top_timing_summary_routed.rpx -warn_on_violation 
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 2 CPUs
+CRITICAL WARNING: [Timing 38-282] The design failed to meet the timing requirements. Please see the timing summary report for details on the timing violations.
+INFO: [runtcl-4] Executing : report_incremental_reuse -file red_pitaya_top_incremental_reuse_routed.rpt
+INFO: [Vivado_Tcl 4-1062] Incremental flow is disabled. No incremental reuse Info to report.
+INFO: [runtcl-4] Executing : report_clock_utilization -file red_pitaya_top_clock_utilization_routed.rpt
+INFO: [runtcl-4] Executing : report_bus_skew -warn_on_violation -file red_pitaya_top_bus_skew_routed.rpt -pb red_pitaya_top_bus_skew_routed.pb -rpx red_pitaya_top_bus_skew_routed.rpx
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 2 CPUs
+Command: write_bitstream -force red_pitaya_top.bit
+Attempting to get a license for feature 'Implementation' and/or device 'xc7z010'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z010'
+Running DRC as a precondition to command write_bitstream
+INFO: [IP_Flow 19-1839] IP Catalog is up to date.
+INFO: [DRC 23-27] Running DRC with 2 threads
+WARNING: [DRC DPIP-1] Input pipelining: DSP i_scope/i_dfilt1_cha/bb_mult input i_scope/i_dfilt1_cha/bb_mult/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC DPIP-1] Input pipelining: DSP i_scope/i_dfilt1_cha/kk_mult input i_scope/i_dfilt1_cha/kk_mult/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC DPIP-1] Input pipelining: DSP i_scope/i_dfilt1_cha/wideAddDsp_r3_sum_0 input i_scope/i_dfilt1_cha/wideAddDsp_r3_sum_0/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC DPIP-1] Input pipelining: DSP i_scope/i_dfilt1_cha/wideAddDsp_r3_sum_0__0 input i_scope/i_dfilt1_cha/wideAddDsp_r3_sum_0__0/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC DPIP-1] Input pipelining: DSP i_scope/i_dfilt1_cha/wideAddDsp_r3_sum_0__0 input i_scope/i_dfilt1_cha/wideAddDsp_r3_sum_0__0/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC DPIP-1] Input pipelining: DSP i_scope/i_dfilt1_cha/wideAddDsp_r3_sum_0__0 input i_scope/i_dfilt1_cha/wideAddDsp_r3_sum_0__0/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC DPIP-1] Input pipelining: DSP i_scope/i_dfilt1_cha/wideAddDsp_r3_sum_0__1 input i_scope/i_dfilt1_cha/wideAddDsp_r3_sum_0__1/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC DPIP-1] Input pipelining: DSP i_scope/i_dfilt1_cha/wideAddDsp_r3_sum_0__1 input i_scope/i_dfilt1_cha/wideAddDsp_r3_sum_0__1/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC DPIP-1] Input pipelining: DSP i_scope/i_dfilt1_chb/bb_mult input i_scope/i_dfilt1_chb/bb_mult/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC DPIP-1] Input pipelining: DSP i_scope/i_dfilt1_chb/kk_mult input i_scope/i_dfilt1_chb/kk_mult/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC DPIP-1] Input pipelining: DSP i_scope/i_dfilt1_chb/wideAddDsp_r3_sum_0 input i_scope/i_dfilt1_chb/wideAddDsp_r3_sum_0/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC DPIP-1] Input pipelining: DSP i_scope/i_dfilt1_chb/wideAddDsp_r3_sum_0__0 input i_scope/i_dfilt1_chb/wideAddDsp_r3_sum_0__0/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC DPIP-1] Input pipelining: DSP i_scope/i_dfilt1_chb/wideAddDsp_r3_sum_0__0 input i_scope/i_dfilt1_chb/wideAddDsp_r3_sum_0__0/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC DPIP-1] Input pipelining: DSP i_scope/i_dfilt1_chb/wideAddDsp_r3_sum_0__0 input i_scope/i_dfilt1_chb/wideAddDsp_r3_sum_0__0/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC DPIP-1] Input pipelining: DSP i_scope/i_dfilt1_chb/wideAddDsp_r3_sum_0__1 input i_scope/i_dfilt1_chb/wideAddDsp_r3_sum_0__1/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC DPIP-1] Input pipelining: DSP i_scope/i_dfilt1_chb/wideAddDsp_r3_sum_0__1 input i_scope/i_dfilt1_chb/wideAddDsp_r3_sum_0__1/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC DPIP-1] Input pipelining: DSP lock/lia_inst_1/mult input lock/lia_inst_1/mult/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC DPIP-1] Input pipelining: DSP lock/lia_inst_1/mult input lock/lia_inst_1/mult/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC DPIP-1] Input pipelining: DSP lock/lia_inst_1/scaled_raw input lock/lia_inst_1/scaled_raw/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC DPIP-1] Input pipelining: DSP lock/lia_inst_1/scaled_raw__0 input lock/lia_inst_1/scaled_raw__0/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC DPIP-1] Input pipelining: DSP lock/pid_inst_1/d_mem_2_reg input lock/pid_inst_1/d_mem_2_reg/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC DPIP-1] Input pipelining: DSP lock/pid_inst_1/d_response_reg input lock/pid_inst_1/d_response_reg/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC DPIP-1] Input pipelining: DSP lock/pid_inst_1/d_response_reg input lock/pid_inst_1/d_response_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC DPIP-1] Input pipelining: DSP lock/pid_inst_1/i_raw input lock/pid_inst_1/i_raw/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC DPIP-1] Input pipelining: DSP lock/pid_inst_1/p_raw input lock/pid_inst_1/p_raw/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC DPIP-1] Input pipelining: DSP lock/pid_inst_1/total_sum input lock/pid_inst_1/total_sum/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC DPIP-1] Input pipelining: DSP lock/pid_inst_1/total_sum input lock/pid_inst_1/total_sum/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC DPIP-1] Input pipelining: DSP lock/pid_inst_1/total_sum input lock/pid_inst_1/total_sum/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC DPOP-1] PREG Output pipelining: DSP i_scope/i_dfilt1_cha/aa_mult output i_scope/i_dfilt1_cha/aa_mult/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+WARNING: [DRC DPOP-1] PREG Output pipelining: DSP i_scope/i_dfilt1_cha/kk_mult output i_scope/i_dfilt1_cha/kk_mult/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+WARNING: [DRC DPOP-1] PREG Output pipelining: DSP i_scope/i_dfilt1_cha/pp_mult output i_scope/i_dfilt1_cha/pp_mult/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+WARNING: [DRC DPOP-1] PREG Output pipelining: DSP i_scope/i_dfilt1_cha/wideAddDsp_r3_sum_0__0 output i_scope/i_dfilt1_cha/wideAddDsp_r3_sum_0__0/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+WARNING: [DRC DPOP-1] PREG Output pipelining: DSP i_scope/i_dfilt1_cha/wideAddDsp_r3_sum_0__1 output i_scope/i_dfilt1_cha/wideAddDsp_r3_sum_0__1/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+WARNING: [DRC DPOP-1] PREG Output pipelining: DSP i_scope/i_dfilt1_chb/aa_mult output i_scope/i_dfilt1_chb/aa_mult/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+WARNING: [DRC DPOP-1] PREG Output pipelining: DSP i_scope/i_dfilt1_chb/kk_mult output i_scope/i_dfilt1_chb/kk_mult/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+WARNING: [DRC DPOP-1] PREG Output pipelining: DSP i_scope/i_dfilt1_chb/pp_mult output i_scope/i_dfilt1_chb/pp_mult/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+WARNING: [DRC DPOP-1] PREG Output pipelining: DSP i_scope/i_dfilt1_chb/wideAddDsp_r3_sum_0__0 output i_scope/i_dfilt1_chb/wideAddDsp_r3_sum_0__0/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+WARNING: [DRC DPOP-1] PREG Output pipelining: DSP i_scope/i_dfilt1_chb/wideAddDsp_r3_sum_0__1 output i_scope/i_dfilt1_chb/wideAddDsp_r3_sum_0__1/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+WARNING: [DRC DPOP-1] PREG Output pipelining: DSP lock/calib_in_1/mult_raw output lock/calib_in_1/mult_raw/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+WARNING: [DRC DPOP-1] PREG Output pipelining: DSP lock/calib_in_2/mult_raw output lock/calib_in_2/mult_raw/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+WARNING: [DRC DPOP-1] PREG Output pipelining: DSP lock/calib_out_1/mult_raw output lock/calib_out_1/mult_raw/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+WARNING: [DRC DPOP-1] PREG Output pipelining: DSP lock/calib_out_2/mult_raw output lock/calib_out_2/mult_raw/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+WARNING: [DRC DPOP-1] PREG Output pipelining: DSP lock/gen_hi_inst_1/sin_raw output lock/gen_hi_inst_1/sin_raw/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+WARNING: [DRC DPOP-1] PREG Output pipelining: DSP lock/gen_hi_inst_2/sin_raw output lock/gen_hi_inst_2/sin_raw/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+WARNING: [DRC DPOP-1] PREG Output pipelining: DSP lock/gen_lo_inst_1/sin_raw output lock/gen_lo_inst_1/sin_raw/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+WARNING: [DRC DPOP-1] PREG Output pipelining: DSP lock/gen_lo_inst_2/sin_raw output lock/gen_lo_inst_2/sin_raw/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+WARNING: [DRC DPOP-1] PREG Output pipelining: DSP lock/lia_inst_1/mult output lock/lia_inst_1/mult/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+WARNING: [DRC DPOP-1] PREG Output pipelining: DSP lock/lia_inst_1/scaled_raw output lock/lia_inst_1/scaled_raw/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+WARNING: [DRC DPOP-1] PREG Output pipelining: DSP lock/lia_inst_1/scaled_raw__0 output lock/lia_inst_1/scaled_raw__0/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+WARNING: [DRC DPOP-1] PREG Output pipelining: DSP lock/pid_inst_1/i_raw output lock/pid_inst_1/i_raw/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+WARNING: [DRC DPOP-1] PREG Output pipelining: DSP lock/pid_inst_1/p_raw output lock/pid_inst_1/p_raw/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+WARNING: [DRC DPOP-1] PREG Output pipelining: DSP lock/pid_inst_1/total_sum output lock/pid_inst_1/total_sum/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+WARNING: [DRC DPOP-1] PREG Output pipelining: DSP lock/ramp_inst_1/lin_raw output lock/ramp_inst_1/lin_raw/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+WARNING: [DRC DPOP-2] MREG Output pipelining: DSP i_scope/i_dfilt1_cha/aa_mult multiplier stage i_scope/i_dfilt1_cha/aa_mult/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+WARNING: [DRC DPOP-2] MREG Output pipelining: DSP i_scope/i_dfilt1_cha/bb_mult multiplier stage i_scope/i_dfilt1_cha/bb_mult/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+WARNING: [DRC DPOP-2] MREG Output pipelining: DSP i_scope/i_dfilt1_cha/kk_mult multiplier stage i_scope/i_dfilt1_cha/kk_mult/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+WARNING: [DRC DPOP-2] MREG Output pipelining: DSP i_scope/i_dfilt1_cha/pp_mult multiplier stage i_scope/i_dfilt1_cha/pp_mult/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+WARNING: [DRC DPOP-2] MREG Output pipelining: DSP i_scope/i_dfilt1_chb/aa_mult multiplier stage i_scope/i_dfilt1_chb/aa_mult/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+WARNING: [DRC DPOP-2] MREG Output pipelining: DSP i_scope/i_dfilt1_chb/bb_mult multiplier stage i_scope/i_dfilt1_chb/bb_mult/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+WARNING: [DRC DPOP-2] MREG Output pipelining: DSP i_scope/i_dfilt1_chb/kk_mult multiplier stage i_scope/i_dfilt1_chb/kk_mult/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+WARNING: [DRC DPOP-2] MREG Output pipelining: DSP i_scope/i_dfilt1_chb/pp_mult multiplier stage i_scope/i_dfilt1_chb/pp_mult/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+WARNING: [DRC DPOP-2] MREG Output pipelining: DSP lock/calib_in_1/mult_raw multiplier stage lock/calib_in_1/mult_raw/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+WARNING: [DRC DPOP-2] MREG Output pipelining: DSP lock/calib_in_2/mult_raw multiplier stage lock/calib_in_2/mult_raw/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+WARNING: [DRC DPOP-2] MREG Output pipelining: DSP lock/calib_out_1/mult_raw multiplier stage lock/calib_out_1/mult_raw/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+WARNING: [DRC DPOP-2] MREG Output pipelining: DSP lock/calib_out_2/mult_raw multiplier stage lock/calib_out_2/mult_raw/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+WARNING: [DRC DPOP-2] MREG Output pipelining: DSP lock/gen_hi_inst_1/sin_raw multiplier stage lock/gen_hi_inst_1/sin_raw/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+WARNING: [DRC DPOP-2] MREG Output pipelining: DSP lock/gen_hi_inst_2/sin_raw multiplier stage lock/gen_hi_inst_2/sin_raw/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+WARNING: [DRC DPOP-2] MREG Output pipelining: DSP lock/gen_lo_inst_1/sin_raw multiplier stage lock/gen_lo_inst_1/sin_raw/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+WARNING: [DRC DPOP-2] MREG Output pipelining: DSP lock/gen_lo_inst_2/sin_raw multiplier stage lock/gen_lo_inst_2/sin_raw/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+WARNING: [DRC DPOP-2] MREG Output pipelining: DSP lock/lia_inst_1/mult multiplier stage lock/lia_inst_1/mult/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+WARNING: [DRC DPOP-2] MREG Output pipelining: DSP lock/lia_inst_1/scaled_raw multiplier stage lock/lia_inst_1/scaled_raw/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+WARNING: [DRC DPOP-2] MREG Output pipelining: DSP lock/lia_inst_1/scaled_raw__0 multiplier stage lock/lia_inst_1/scaled_raw__0/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+WARNING: [DRC DPOP-2] MREG Output pipelining: DSP lock/pid_inst_1/i_raw multiplier stage lock/pid_inst_1/i_raw/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+WARNING: [DRC DPOP-2] MREG Output pipelining: DSP lock/pid_inst_1/p_raw multiplier stage lock/pid_inst_1/p_raw/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+WARNING: [DRC DPOP-2] MREG Output pipelining: DSP lock/ramp_inst_1/lin_raw multiplier stage lock/ramp_inst_1/lin_raw/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+WARNING: [DRC PDRC-153] Gated clock check: Net i_daisy/txp_dv_reg_i_2_n_0 is a gated clock net sourced by a combinational pin i_daisy/txp_dv_reg_i_2/O, cell i_daisy/txp_dv_reg_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+INFO: [DRC REQP-20] enum_AREG_0_connects_CEA1_GND_connects_CEA2_GND: i_scope/i_dfilt1_cha/wideAddDsp_r3_sum_0: When DSP48E1 attribute AREG is set to 0, the CEA1 and CEA2 pins should be tied to GND to save power.
+INFO: [DRC REQP-20] enum_AREG_0_connects_CEA1_GND_connects_CEA2_GND: i_scope/i_dfilt1_cha/wideAddDsp_r3_sum_0__0: When DSP48E1 attribute AREG is set to 0, the CEA1 and CEA2 pins should be tied to GND to save power.
+INFO: [DRC REQP-20] enum_AREG_0_connects_CEA1_GND_connects_CEA2_GND: i_scope/i_dfilt1_cha/wideAddDsp_r3_sum_0__1: When DSP48E1 attribute AREG is set to 0, the CEA1 and CEA2 pins should be tied to GND to save power.
+INFO: [DRC REQP-20] enum_AREG_0_connects_CEA1_GND_connects_CEA2_GND: i_scope/i_dfilt1_chb/wideAddDsp_r3_sum_0: When DSP48E1 attribute AREG is set to 0, the CEA1 and CEA2 pins should be tied to GND to save power.
+INFO: [DRC REQP-20] enum_AREG_0_connects_CEA1_GND_connects_CEA2_GND: i_scope/i_dfilt1_chb/wideAddDsp_r3_sum_0__0: When DSP48E1 attribute AREG is set to 0, the CEA1 and CEA2 pins should be tied to GND to save power.
+INFO: [DRC REQP-20] enum_AREG_0_connects_CEA1_GND_connects_CEA2_GND: i_scope/i_dfilt1_chb/wideAddDsp_r3_sum_0__1: When DSP48E1 attribute AREG is set to 0, the CEA1 and CEA2 pins should be tied to GND to save power.
+INFO: [DRC REQP-20] enum_AREG_0_connects_CEA1_GND_connects_CEA2_GND: lock/pid_inst_1/total_sum: When DSP48E1 attribute AREG is set to 0, the CEA1 and CEA2 pins should be tied to GND to save power.
+INFO: [DRC REQP-24] enum_BREG_0_connects_CEB1_GND_connects_CEB2_GND: i_scope/i_dfilt1_cha/wideAddDsp_r3_sum_0: When DSP48E1 attribute BREG is set to 0, the CEB1 and CEB2 pins should be tied to GND to save power.
+INFO: [DRC REQP-24] enum_BREG_0_connects_CEB1_GND_connects_CEB2_GND: i_scope/i_dfilt1_cha/wideAddDsp_r3_sum_0__0: When DSP48E1 attribute BREG is set to 0, the CEB1 and CEB2 pins should be tied to GND to save power.
+INFO: [DRC REQP-24] enum_BREG_0_connects_CEB1_GND_connects_CEB2_GND: i_scope/i_dfilt1_cha/wideAddDsp_r3_sum_0__1: When DSP48E1 attribute BREG is set to 0, the CEB1 and CEB2 pins should be tied to GND to save power.
+INFO: [DRC REQP-24] enum_BREG_0_connects_CEB1_GND_connects_CEB2_GND: i_scope/i_dfilt1_chb/wideAddDsp_r3_sum_0: When DSP48E1 attribute BREG is set to 0, the CEB1 and CEB2 pins should be tied to GND to save power.
+INFO: [DRC REQP-24] enum_BREG_0_connects_CEB1_GND_connects_CEB2_GND: i_scope/i_dfilt1_chb/wideAddDsp_r3_sum_0__0: When DSP48E1 attribute BREG is set to 0, the CEB1 and CEB2 pins should be tied to GND to save power.
+INFO: [DRC REQP-24] enum_BREG_0_connects_CEB1_GND_connects_CEB2_GND: i_scope/i_dfilt1_chb/wideAddDsp_r3_sum_0__1: When DSP48E1 attribute BREG is set to 0, the CEB1 and CEB2 pins should be tied to GND to save power.
+INFO: [DRC REQP-24] enum_BREG_0_connects_CEB1_GND_connects_CEB2_GND: lock/pid_inst_1/total_sum: When DSP48E1 attribute BREG is set to 0, the CEB1 and CEB2 pins should be tied to GND to save power.
+INFO: [DRC REQP-29] enum_CREG_0_connects_CEC_GND: i_scope/i_dfilt1_cha/wideAddDsp_r3_sum_0: When the DSP48E1 CREG attribute is set to 0, the CEC input pin should be tied to GND to save power.
+INFO: [DRC REQP-29] enum_CREG_0_connects_CEC_GND: i_scope/i_dfilt1_cha/wideAddDsp_r3_sum_0__0: When the DSP48E1 CREG attribute is set to 0, the CEC input pin should be tied to GND to save power.
+INFO: [DRC REQP-29] enum_CREG_0_connects_CEC_GND: i_scope/i_dfilt1_cha/wideAddDsp_r3_sum_0__1: When the DSP48E1 CREG attribute is set to 0, the CEC input pin should be tied to GND to save power.
+INFO: [DRC REQP-29] enum_CREG_0_connects_CEC_GND: i_scope/i_dfilt1_chb/wideAddDsp_r3_sum_0: When the DSP48E1 CREG attribute is set to 0, the CEC input pin should be tied to GND to save power.
+INFO: [DRC REQP-29] enum_CREG_0_connects_CEC_GND: i_scope/i_dfilt1_chb/wideAddDsp_r3_sum_0__0: When the DSP48E1 CREG attribute is set to 0, the CEC input pin should be tied to GND to save power.
+INFO: [DRC REQP-29] enum_CREG_0_connects_CEC_GND: i_scope/i_dfilt1_chb/wideAddDsp_r3_sum_0__1: When the DSP48E1 CREG attribute is set to 0, the CEC input pin should be tied to GND to save power.
+INFO: [Vivado 12-3199] DRC finished with 0 Errors, 76 Warnings, 20 Advisories
+INFO: [Vivado 12-3200] Please refer to the DRC report (report_drc) for more information.
+INFO: [Designutils 20-2272] Running write_bitstream with 2 threads.
+Loading data files...
+Loading site data...
+Loading route data...
+Processing options...
+Creating bitmap...
+Creating bitstream...
+Writing bitstream ./red_pitaya_top.bit...
+INFO: [Vivado 12-1842] Bitgen Completed Successfully.
+INFO: [Project 1-120] WebTalk data collection is mandatory when using a WebPACK part without a full Vivado license. To see the specific WebTalk data collected for your design, open the usage_statistics_webtalk.html or usage_statistics_webtalk.xml file in the implementation directory.
+INFO: [Common 17-186] 'C:/Users/travi/Desktop/FPGA_Research/Code/RedPitaya-master/fpga/prj/v0.94/project/redpitaya.runs/impl_1/usage_statistics_webtalk.xml' has been successfully sent to Xilinx on Sun May  9 14:03:01 2021. For additional details about this file, please refer to the WebTalk help file at C:/Xilinx/Vivado/2020.1/doc/webtalk_introduction.html.
+INFO: [Common 17-83] Releasing license: Implementation
+903 Infos, 98 Warnings, 17 Critical Warnings and 0 Errors encountered.
+write_bitstream completed successfully
+write_bitstream: Time (s): cpu = 00:00:24 ; elapsed = 00:00:21 . Memory (MB): peak = 2252.758 ; gain = 418.992
+INFO: [Common 17-206] Exiting Vivado at Sun May  9 14:03:01 2021...
