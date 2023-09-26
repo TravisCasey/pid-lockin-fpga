@@ -1,6 +1,8 @@
 # PID controller and lock-in amplifier FPGA toolkit
 This repository comprises the code, development enviroment, documentation, and interface for a PID controller, a lock-in amplifier, and other supporting modules designed to be deployed on a Red Pitaya STEMlab 125-14 FPGA/microprocessor board. The PID controller and the lock-in amplifier are commonly employed by themselves, but this combination is intended to be employed in tandem in the Pound-Drever-Hall (PDH) technique. This is used for very precisely locking (i.e. holding) a laser frequency at the frequency at which it is most absorbed by a medium. For a full write-up detailing the theory, implementation, testing, and instructions on use, see the [included pdf](Red_Pitaya_Lock.pdf).
 
+My Verilog code can be found in [this folder](fpga/prj/v0.94/project/redpitaya.srcs/sources_1/new). The rest of the repository is the development environment for the Red Pitaya line of boards.
+
 ## Features
 
 The current implementation offered can match the level of several dedicated instruments (particularly the PID controller and lock-in amplifier, but also function generators, filters, and more) while only requiring an inexpensive board and this software. The FPGA is programmed by the Hardware Definition Language (HDL) Verilog, and can be edited using the provided development environment; see section 5 of the [provided write-up](Red_Pitaya_Lock.pdf) for instructions on installing the requisite software, opening the project, compiling it, and deploying it on the board.
